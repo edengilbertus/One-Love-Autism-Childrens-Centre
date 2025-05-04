@@ -1,4 +1,5 @@
 
+
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -100,20 +101,19 @@ async function getPostData(slug: string) {
             title: "Empowering Parents: Highlights from Our Support Groups",
             date: "November 10, 2024",
             author: "One Love Centre Team",
-            imageUrl: "https://picsum.photos/800/400?random=9", // Placeholder, could use sensory images if appropriate
-            imageAlt: "Parents in a group discussion",
-            aiHint: "parents support group uganda meeting community",
+            imageUrl: "https://i.imgur.com/k6ZCCU7.jpeg", // Updated image
+            imageAlt: "Parents in a group discussion with therapist",
+            aiHint: "parents support group uganda meeting community therapy",
             content: `
                 <p class="mb-4">Our parent support groups and counseling sessions are a cornerstone of the support we offer at One Love Autism Children's Centre. These regular meetups provide a safe space for parents and caregivers to connect, share experiences, learn practical strategies, and build a vital support network.</p>
                 <p class="mb-4">Recent sessions have focused on understanding communication challenges, managing challenging behaviors, navigating educational resources, and utilizing sensory strategies at home. Through shared knowledge and mutual encouragement, parents feel less isolated and better equipped to support their children's development.</p>
                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
-                     {/* Optional: Add relevant images if available, or keep placeholder */}
-                    <img src="https://picsum.photos/400/250?random=11" alt="Group discussion" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="parents meeting discussion uganda"/>
-                    <img src="https://picsum.photos/400/250?random=12" alt="Counseling session" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="counseling support group uganda"/>
+                    <img src="https://i.imgur.com/Cmu58fb.jpeg" alt="Parent support group discussion with sensory tools" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="parents meeting discussion uganda sensory tools"/>
+                    <img src="https://i.imgur.com/vJ8aGlS.jpeg" alt="Therapist leading a counseling session" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="counseling support group uganda therapist"/>
                  </div>
                 <p class="mb-4">We believe that empowering parents is key to creating a supportive environment for every child to thrive.</p>
             `,
-            tags: ["Parents", "Support Group", "Community", "Workshop", "Counseling"],
+            tags: ["Parents", "Support Group", "Community", "Workshop", "Counseling", "Therapy"],
         },
         "understanding-sensory-processing": {
             title: "Understanding Sensory Processing in Children with Autism",
@@ -194,7 +194,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
 
         {/* Post Content */}
         <div
-            className="text-foreground leading-relaxed [&_img]:mb-4 [&_img]:max-h-96 [&_img]:object-contain" // Added styling for embedded images
+            className="text-foreground leading-relaxed [&_img]:my-6 [&_img]:rounded-lg [&_img]:shadow-md [&_img]:object-cover [&_img]:w-full [&_img]:max-h-96 [&_img]:mx-auto" // Consolidated image styling within content
             dangerouslySetInnerHTML={{ __html: post.content }} // Render HTML content safely
         />
 
@@ -274,5 +274,3 @@ export async function generateMetadata({ params }: { params: { slug: string } })
      },
   };
 }
-
-    

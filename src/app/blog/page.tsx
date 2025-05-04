@@ -1,4 +1,5 @@
 
+
 import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -52,10 +53,10 @@ const blogPosts = [
     title: "Empowering Parents: Highlights from Our Support Groups", // Updated title
     date: "November 10, 2024", // Example date
     excerpt: "Learn about our recent meetups and counseling sessions designed to equip parents with knowledge and build a strong support network...", // Updated excerpt
-    imageUrl: "https://picsum.photos/400/250?random=9", // Placeholder image - Keep or update as needed
-    imageAlt: "Parents group session",
+    imageUrl: "https://i.imgur.com/k6ZCCU7.jpeg", // Updated cover image
+    imageAlt: "Parents group session with therapist",
     slug: "parent-support-groups", // Updated slug
-    aiHint: "parents support group uganda meeting community",
+    aiHint: "parents support group uganda meeting therapy community",
   },
    {
     id: 6, // Renumbered ID
@@ -127,5 +128,3 @@ export default function BlogPage() {
     </div>
   );
 }
-
-    
