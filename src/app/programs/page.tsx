@@ -66,11 +66,11 @@ export default function ProgramsPage() {
         <Card className="shadow-lg overflow-hidden">
            <div className="relative h-60 w-full">
             <Image
-              src="https://picsum.photos/600/400?random=6" // Placeholder for now, replace if specific image available
-              alt="Children learning life skills"
+              src="https://i.imgur.com/muY1tfR.jpeg" // Updated image
+              alt="Children learning life skills like crafts"
               layout="fill"
               objectFit="cover"
-              data-ai-hint="children life skills training uganda crafts gardening"
+              data-ai-hint="children life skills training uganda crafts"
             />
           </div>
           <CardHeader className="flex flex-row items-start gap-4 p-6">
@@ -98,12 +98,12 @@ export default function ProgramsPage() {
              {/* Optional: Add another small relevant image */}
              <div className="pt-4">
                  <Image
-                    src="https://picsum.photos/400/250?random=17" // Placeholder, ideally show crafts or gardening
-                    alt="Students participating in vocational training"
+                    src="https://i.imgur.com/FcLELYm.jpeg" // Updated image
+                    alt="Students participating in vocational training activity"
                     width={400}
                     height={250}
                     className="rounded-md object-cover w-full"
-                    data-ai-hint="students vocational training crafts uganda"
+                    data-ai-hint="students vocational training uganda discussion"
                 />
              </div>
           </CardContent>
@@ -129,12 +129,12 @@ export default function ProgramsPage() {
              {/* Optional: Add image of parent group */}
              <div className="pt-4">
                  <Image
-                    src="https://picsum.photos/400/250?random=9" // Placeholder image from blog list
-                    alt="Parents participating in a support group session"
+                    src="https://i.imgur.com/FcLELYm.jpeg" // Updated image
+                    alt="Parents participating in a support group session discussion"
                     width={400}
                     height={250}
                     className="rounded-md object-cover w-full md:w-2/3 lg:w-1/2 mx-auto md:ml-0"
-                    data-ai-hint="parents support group uganda meeting"
+                    data-ai-hint="parents support group uganda meeting discussion"
                 />
              </div>
           </div>
@@ -143,5 +143,3 @@ export default function ProgramsPage() {
     </div>
   );
 }
-
-    

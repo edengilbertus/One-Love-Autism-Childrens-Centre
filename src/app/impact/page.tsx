@@ -76,7 +76,7 @@ export default function ImpactPage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold tracking-tight">Our Impact</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-          See how the generosity of our community and the dedication of our team are transforming lives at One Love Autism Children's Centre. {/* Updated Name */}
+          See how the generosity of our community and the dedication of our team are transforming lives at One Love Autism Children's Centre.
         </p>
       </div>
 
@@ -126,10 +126,10 @@ export default function ImpactPage() {
             </p>
              {/* Grid for school building vision images */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
-                <Image src="https://picsum.photos/300/200?random=13" alt="Future school building concept 1" width={300} height={200} className="rounded-md object-cover w-full shadow-md" data-ai-hint="school building concept drawing exterior"/>
-                <Image src="https://picsum.photos/300/200?random=14" alt="Future school building concept 2" width={300} height={200} className="rounded-md object-cover w-full shadow-md" data-ai-hint="school classroom concept rendering interior"/>
-                <Image src="https://picsum.photos/300/200?random=15" alt="Future school playground concept" width={300} height={200} className="rounded-md object-cover w-full shadow-md" data-ai-hint="school playground children concept design"/>
-                <Image src="https://picsum.photos/300/200?random=16" alt="Future school therapy room concept" width={300} height={200} className="rounded-md object-cover w-full shadow-md" data-ai-hint="therapy room school concept design interior"/>
+                <Image src="https://i.imgur.com/Yhohoc1.jpeg" alt="Future school building students playing" width={300} height={200} className="rounded-md object-cover w-full shadow-md" data-ai-hint="school building children playing uganda"/>
+                <Image src="https://i.imgur.com/2i1jWsY.jpeg" alt="Future school building students learning" width={300} height={200} className="rounded-md object-cover w-full shadow-md" data-ai-hint="school classroom students learning interior uganda"/>
+                <Image src="https://i.imgur.com/m0eK1Mv.jpeg" alt="Future school building exterior view" width={300} height={200} className="rounded-md object-cover w-full shadow-md" data-ai-hint="school building exterior render design uganda"/>
+                <Image src="https://i.imgur.com/zTbQPC9.jpeg" alt="Future school building kids drawing" width={300} height={200} className="rounded-md object-cover w-full shadow-md" data-ai-hint="school classroom kids drawing interior uganda"/>
             </div>
             {/* Using Button component with Link */}
              <Button asChild size="lg">
@@ -142,5 +142,3 @@ export default function ImpactPage() {
     </div>
   );
 }
-
-    
