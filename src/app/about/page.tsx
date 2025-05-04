@@ -2,9 +2,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, Users, History, Target, Eye } from "lucide-react";
+import { MapPin, Users, History, Target, Eye, LinkIcon, Briefcase } from "lucide-react"; // Added LinkIcon, Briefcase
 // Map component needs API key setup, using placeholder for now
 // import { Map } from '@/components/map'; // Assume a map component exists
+
+// Inline SVG for Instagram Icon (if not using lucide-react)
+const InstagramIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4">
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+  </svg>
+);
+
 
 export default function AboutPage() {
   // Placeholder location for Kabale - Use the specific one from contact page
@@ -12,7 +22,7 @@ export default function AboutPage() {
 
   return (
     <div className="container py-12 md:py-20 px-4 md:px-6">
-      <h1 className="text-4xl font-bold tracking-tight text-center mb-12">About One Love Autism Children's Centre</h1> {/* Updated Name */}
+      <h1 className="text-4xl font-bold tracking-tight text-center mb-12">About One Love Autism Children's Centre</h1>
 
       {/* Mission & Vision Section */}
       <section className="mb-16 grid md:grid-cols-2 gap-8 items-center">
@@ -61,7 +71,7 @@ export default function AboutPage() {
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground">
             <p>
-              One Love Autism Children’s Centre Kabale was founded in [Year Founded - Replace] by [Founder's Name - Replace] with a deep passion for supporting children often overlooked by society. Witnessing the lack of specialized resources for children with autism and neurodevelopmental disabilities in the region, [He/She/They] established the centre to provide a safe, nurturing, and stimulating environment.
+              One Love Autism Children’s Centre Kabale was founded in 2019 with a deep passion for supporting children often overlooked by society. Witnessing the lack of specialized resources for children with autism and neurodevelopmental disabilities in the region, we established the centre to provide a safe, nurturing, and stimulating environment.
             </p>
             <p>
               Starting with just a handful of children, the centre has grown thanks to the dedication of our team, the resilience of our families, and the generosity of supporters like you. We continuously strive to expand our programs and reach, adapting to the evolving needs of our community.
@@ -81,9 +91,9 @@ export default function AboutPage() {
                Our passionate team of educators, therapists, and support staff are the heart of One Love Autism Children’s Centre.
             </p>
          </div>
-         {/* Grid for team members - Placeholder */}
+         {/* Grid for team members */}
          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Example Team Member Card (Repeat for each member) */}
+            {/* Example Team Member Card (Founder/Director - Keep or adjust as needed) */}
             <Card className="text-center">
                 <CardHeader>
                    <Image
@@ -94,8 +104,8 @@ export default function AboutPage() {
                      className="rounded-full mx-auto mb-4 border-4 border-primary/50"
                      data-ai-hint="person portrait professional"
                    />
-                   <CardTitle className="text-xl">[Founder's Name]</CardTitle>
-                   <p className="text-sm text-primary font-medium">Founder & Director</p>
+                   <CardTitle className="text-xl">[Team Member Name]</CardTitle> {/* Replace with actual name if available */}
+                   <p className="text-sm text-primary font-medium">Founder & Director</p> {/* Adjust role if needed */}
                 </CardHeader>
                 <CardContent>
                    <p className="text-sm text-muted-foreground">
@@ -103,6 +113,7 @@ export default function AboutPage() {
                    </p>
                 </CardContent>
             </Card>
+            {/* Example Team Member Card 2 */}
              <Card className="text-center">
                 <CardHeader>
                    <Image
@@ -122,23 +133,43 @@ export default function AboutPage() {
                    </p>
                 </CardContent>
             </Card>
+            {/* Eden Gilbert Kiseka Card */}
              <Card className="text-center">
                 <CardHeader>
                    <Image
-                     src="https://picsum.photos/200/200?grayscale"
-                     alt="Team Member Name"
+                     src="https://i.imgur.com/qG5Jtpl.jpeg"
+                     alt="Eden Gilbert Kiseka"
                      width={120}
                      height={120}
-                     className="rounded-full mx-auto mb-4 border-4 border-primary/50"
-                     data-ai-hint="person portrait educator"
+                     className="rounded-full mx-auto mb-4 border-4 border-primary/50 object-cover"
+                     data-ai-hint="person portrait engineer tech"
                    />
-                   <CardTitle className="text-xl">[Team Member Name]</CardTitle>
-                   <p className="text-sm text-primary font-medium">[Role, e.g., Special Educator]</p>
+                   <CardTitle className="text-xl">Eden Gilbert Kiseka</CardTitle>
+                   <p className="text-sm text-primary font-medium">Engineer</p>
                 </CardHeader>
                 <CardContent>
-                   <p className="text-sm text-muted-foreground">
-                     [Brief bio about the team member.]
+                   <p className="text-sm text-muted-foreground mb-3">
+                     A self-taught software engineer and UI & UX designer. Electrical Engineer by profession. Founder and CEO of Carthigan Electronics.
                    </p>
+                   <div className="flex justify-center items-center space-x-3">
+                      <a href="https://edengilbertus.github.io/edengilbertportfolio/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Eden Gilbert's Portfolio">
+                         <LinkIcon className="h-5 w-5" />
+                      </a>
+                      <a href="https://www.instagram.com/carthiganelectronics?igsh=MXRuazc3OXdyMmFzNw==" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Carthigan Electronics Instagram">
+                         <InstagramIcon />
+                      </a>
+                      {/* Optionally add briefcase for CEO role */}
+                       <TooltipProvider>
+                           <Tooltip>
+                             <TooltipTrigger>
+                               <Briefcase className="h-5 w-5 text-muted-foreground"/>
+                             </TooltipTrigger>
+                             <TooltipContent>
+                               <p>Founder & CEO, Carthigan Electronics</p>
+                             </TooltipContent>
+                           </Tooltip>
+                       </TooltipProvider>
+                   </div>
                 </CardContent>
             </Card>
             {/* Add more team member cards */}
@@ -154,9 +185,7 @@ export default function AboutPage() {
          </div>
         {/* Map Placeholder - Requires integration with a map library and API key */}
         <div className="aspect-video w-full bg-muted rounded-lg shadow-md flex items-center justify-center text-muted-foreground overflow-hidden">
-           {/* Replace this div with the actual Map component when available */}
-          {/* <p>Map of Kabale, Uganda will be displayed here.</p> */}
-           {/* Embedded Google Map using iframe */}
+            {/* Embedded Google Map using iframe */}
             <iframe
               src={`https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=${oneLoveCentreLocation.lat},${oneLoveCentreLocation.lng}`} // Replace YOUR_GOOGLE_MAPS_API_KEY
               width="100%"
@@ -165,9 +194,8 @@ export default function AboutPage() {
               allowFullScreen={false}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="One Love Autism Children's Centre Location" // Updated Name
+              title="One Love Autism Children's Centre Location"
             ></iframe>
-          {/* <Map center={oneLoveCentreLocation} zoom={13} /> */}
         </div>
          <div className="text-center mt-4">
           <a
@@ -186,3 +214,13 @@ export default function AboutPage() {
     </div>
   );
 }
+
+
+// Helper components for Tooltip (if not already globally available)
+// You might need to import these or ensure they are part of your UI components
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
