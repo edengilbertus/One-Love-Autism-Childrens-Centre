@@ -7,12 +7,12 @@ import { MapPin, Users, History, Target, Eye } from "lucide-react";
 // import { Map } from '@/components/map'; // Assume a map component exists
 
 export default function AboutPage() {
-  // Placeholder location for Kabale
-  const kabaleLocation = { lat: -1.2505, lng: 29.9886 };
+  // Placeholder location for Kabale - Use the specific one from contact page
+   const oneLoveCentreLocation = { lat: -1.249803, lng: 29.986100 };
 
   return (
     <div className="container py-12 md:py-20 px-4 md:px-6">
-      <h1 className="text-4xl font-bold tracking-tight text-center mb-12">About One Love Centre</h1>
+      <h1 className="text-4xl font-bold tracking-tight text-center mb-12">About One Love Autism Children’s Centre</h1>
 
       {/* Mission & Vision Section */}
       <section className="mb-16 grid md:grid-cols-2 gap-8 items-center">
@@ -78,7 +78,7 @@ export default function AboutPage() {
             <Users className="h-10 w-10 text-primary mx-auto mb-2" />
             <h2 className="text-3xl font-semibold tracking-tight">Meet Our Dedicated Team</h2>
             <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
-               Our passionate team of educators, therapists, and support staff are the heart of One Love Centre.
+               Our passionate team of educators, therapists, and support staff are the heart of One Love Autism Children’s Centre.
             </p>
          </div>
          {/* Grid for team members - Placeholder */}
@@ -153,19 +153,35 @@ export default function AboutPage() {
              <p className="text-muted-foreground mt-2">We are located in the heart of Kabale District, Uganda.</p>
          </div>
         {/* Map Placeholder - Requires integration with a map library and API key */}
-        <div className="aspect-video w-full bg-muted rounded-lg shadow-md flex items-center justify-center text-muted-foreground">
+        <div className="aspect-video w-full bg-muted rounded-lg shadow-md flex items-center justify-center text-muted-foreground overflow-hidden">
            {/* Replace this div with the actual Map component when available */}
-          <p>Map of Kabale, Uganda will be displayed here.</p>
-          {/* <Map center={kabaleLocation} zoom={13} /> */}
+          {/* <p>Map of Kabale, Uganda will be displayed here.</p> */}
+           {/* Embedded Google Map using iframe */}
+            <iframe
+              src={`https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=${oneLoveCentreLocation.lat},${oneLoveCentreLocation.lng}`} // Replace YOUR_GOOGLE_MAPS_API_KEY
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="One Love Autism Children's Centre Location"
+            ></iframe>
+          {/* <Map center={oneLoveCentreLocation} zoom={13} /> */}
         </div>
-        <div className="text-center mt-4">
-          <Link
-             href="/contact#map"
+         <div className="text-center mt-4">
+          <a
+             href={`https://www.google.com/maps/search/?api=1&query=${oneLoveCentreLocation.lat},${oneLoveCentreLocation.lng}`}
+             target="_blank"
+             rel="noopener noreferrer"
              className="text-primary hover:underline text-sm font-medium"
           >
-             Get Directions
-          </Link>
+             View on Google Maps
+          </a>
         </div>
+         <div className="mt-4 p-3 bg-yellow-100 border border-yellow-300 rounded-md text-yellow-800 text-xs text-center max-w-md mx-auto">
+            <strong>Developer Note:</strong> Map embed requires a Google Maps API key. Replace `YOUR_GOOGLE_MAPS_API_KEY` in the `iframe src`.
+         </div>
       </section>
     </div>
   );

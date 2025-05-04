@@ -49,7 +49,7 @@ export default function Home() {
           <Card className="overflow-hidden md:flex md:items-center max-w-4xl mx-auto shadow-lg">
             <div className="md:w-1/2">
               <Image
-                src="https://picsum.photos/600/400"
+                src="https://i.imgur.com/xjNZs6m.jpeg" // Updated main image
                 alt="Anisha using her new wheelchair"
                 width={600}
                 height={400}
@@ -59,19 +59,19 @@ export default function Home() {
             </div>
             <div className="md:w-1/2">
               <CardHeader>
-                <CardTitle className="text-2xl">Anisha’s New Wheelchair</CardTitle>
+                <CardTitle className="text-2xl">New Wheelchairs Bring Independence</CardTitle>
                 <CardDescription>March 2023 - Wheelchair Donation</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Thanks to the generous donation from Isabella and Herman Zauscher, Anisha, Divine, and Aullelia received wheelchairs. Now, they can attend school and play with newfound independence.
+                  In March 2023, three of our beautiful children — Natukunda Anisha, Abaasa Divine, and Amutuheire Aullelia — received new wheelchairs through the generous support of our friends Isabella and Herman Zauscher from Austria. Before, they faced daily challenges moving around, attending school, playing with other children, and even participating in family activities. Transport was difficult, and they often missed out on moments that every child deserves.
                 </p>
               </CardContent>
               <CardFooter className="flex justify-between items-center">
                  <p className="text-xs text-muted-foreground">Donor: Isabella & Herman Zauscher</p>
                 <Button variant="link" asChild className="p-0 h-auto">
-                  <Link href="/impact">
-                    See More Impact <ArrowRight className="ml-1 h-4 w-4" />
+                  <Link href="/blog/anishas-story"> {/* Update link to specific blog post slug */}
+                    Read Anisha's Story <ArrowRight className="ml-1 h-4 w-4" />
                   </Link>
                 </Button>
               </CardFooter>
@@ -83,7 +83,7 @@ export default function Home() {
       {/* Introduction Section */}
       <section className="py-16 md:py-24">
         <div className="container px-4 md:px-6 text-center">
-          <h2 className="text-3xl font-semibold tracking-tight mb-4">Welcome to One Love Centre</h2>
+          <h2 className="text-3xl font-semibold tracking-tight mb-4">Welcome to One Love Autism Children’s Centre</h2>
           <p className="max-w-3xl mx-auto text-lg text-muted-foreground mb-8">
             One Love Autism Children’s Centre Kabale is a beacon of hope in Kabale District, Uganda. We are dedicated to nurturing the potential of children with autism and related neurodevelopmental challenges through tailored education, therapeutic interventions, and strong community partnerships.
           </p>

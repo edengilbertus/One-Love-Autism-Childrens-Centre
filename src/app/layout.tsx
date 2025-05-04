@@ -16,16 +16,16 @@ export const metadata: Metadata = {
   // Use the heart/hands logo (or placeholder) for favicon - requires specific setup not included here.
   // icons: { icon: '/favicon.ico' }, // Example, replace with actual path
   title: {
-    template: '%s | One Love Centre Kabale',
+    template: '%s | One Love Autism Children’s Centre Kabale',
     default: 'One Love Autism Children’s Centre Kabale - Empowering Every Child',
   },
   description: 'One Love Autism Children’s Centre in Kabale, Uganda, empowers children with autism and neurodevelopmental disabilities through education, therapy, and community support.',
-  keywords: ['autism centre', 'neurodevelopmental disabilities', 'Kabale Uganda', 'nonprofit', 'special needs education', 'therapy', 'community support'],
+  keywords: ['autism centre', 'neurodevelopmental disabilities', 'Kabale Uganda', 'nonprofit', 'special needs education', 'therapy', 'community support', 'One Love Autism Children’s Centre'],
   openGraph: {
       title: 'One Love Autism Children’s Centre Kabale',
       description: 'Empowering children with autism and neurodevelopmental disabilities in Kabale, Uganda.',
       url: 'https://www.onelovecentre.org', // Replace with actual URL
-      siteName: 'One Love Centre Kabale',
+      siteName: 'One Love Autism Children’s Centre Kabale',
       // images: [ // Add a relevant image for social sharing
       //   {
       //     url: 'https://www.onelovecentre.org/og-image.jpg', // Replace with actual image URL
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
     // twitter: { // Add Twitter specific card data if needed
     //   card: 'summary_large_image',
-    //   title: 'One Love Centre Kabale',
+    //   title: 'One Love Autism Children’s Centre Kabale',
     //   description: 'Empowering children with autism and neurodevelopmental disabilities.',
     //   // siteId: '@YourTwitterHandle', // Replace if available
     //   // creator: '@YourTwitterHandle',

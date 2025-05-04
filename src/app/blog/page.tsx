@@ -5,39 +5,68 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-// Placeholder blog post data
+// Placeholder blog post data - Updated based on feedback
 const blogPosts = [
-  {
+   {
     id: 1,
-    title: "A Day in the Life: Volunteering at One Love Centre",
-    date: "October 26, 2024",
-    excerpt: "Read about Maria's heartwarming experience volunteering with our amazing children and dedicated staff...",
-    imageUrl: "https://picsum.photos/400/250?random=8",
-    imageAlt: "Volunteer playing with child",
-    slug: "volunteer-story-maria", // Example slug for full post
-    aiHint: "volunteer children playing uganda",
+    title: "New Wheelchairs Bring Independence to Anisha, Divine, and Aullelia", // Updated title
+    date: "March 20, 2023", // Example date
+    excerpt: "Read the heartwarming story of how new wheelchairs, donated by Isabella and Herman Zauscher, transformed the lives of three children...", // Updated excerpt
+    imageUrl: "https://i.imgur.com/xjNZs6m.jpeg", // Main image for Anisha's story
+    imageAlt: "Children happy with new wheelchairs",
+    slug: "anishas-story", // Specific slug
+    aiHint: "children wheelchairs uganda donation happy",
   },
   {
     id: 2,
-    title: "Family Testimonial: How One Love Centre Changed David's Life",
-    date: "September 15, 2024",
-    excerpt: "David's parents share their journey and the incredible progress David has made since joining our programs...",
-    imageUrl: "https://picsum.photos/400/250?random=9",
-    imageAlt: "Smiling child with parents",
-    slug: "family-testimonial-david",
-    aiHint: "family child happy uganda",
+    title: "Impact Update: Providing Vital Medication Support", // Updated title
+    date: "January 25, 2025", // Updated date
+    excerpt: "Thanks to Gabi Eder, nine children received crucial medications this month, helping them manage seizures and stay healthy...", // Updated excerpt
+    imageUrl: "https://picsum.photos/400/250?random=2", // Placeholder image
+    imageAlt: "Medication packages",
+    slug: "medication-support", // Updated slug
+    aiHint: "medication pharmacy health uganda",
   },
    {
     id: 3,
-    title: "Understanding Sensory Processing Disorder in Children",
+    title: "Promoting Dignity: Menstrual Hygiene Support for Girls", // Updated title
+    date: "January 20, 2025", // Updated date
+    excerpt: "Five girls received reusable sanitary pads, ensuring comfort, confidence, and continued access to education...", // Updated excerpt
+    imageUrl: "https://picsum.photos/400/250?random=3", // Placeholder image
+    imageAlt: "Reusable menstrual pads",
+    slug: "menstrual-hygiene", // Updated slug
+    aiHint: "menstrual hygiene pads girls education uganda",
+  },
+    {
+    id: 4,
+    title: "Mothers' Initiative Brings Warmth: A Blanket Drive Success", // New post title
+    date: "December 15, 2024", // New post date
+    excerpt: "Discover how hardworking mothers used collective savings to purchase cozy blankets for 30 children at the centre...", // New post excerpt
+    imageUrl: "https://picsum.photos/400/250?random=4", // Placeholder image
+    imageAlt: "Children with new blankets",
+    slug: "blanket-drive", // New post slug
+    aiHint: "children blankets warm community uganda",
+  },
+   {
+    id: 5, // Renumbered ID
+    title: "Empowering Parents: Highlights from Our Support Groups", // Updated title
+    date: "November 10, 2024", // Example date
+    excerpt: "Learn about our recent meetups and counseling sessions designed to equip parents with knowledge and build a strong support network...", // Updated excerpt
+    imageUrl: "https://picsum.photos/400/250?random=9", // Placeholder image
+    imageAlt: "Parents group session",
+    slug: "parent-support-groups", // Updated slug
+    aiHint: "parents support group uganda meeting community",
+  },
+   {
+    id: 6, // Renumbered ID
+    title: "Understanding Sensory Processing in Children with Autism", // Kept original title
     date: "August 5, 2024",
-    excerpt: "Our lead therapist provides insights into sensory challenges and strategies used at the centre...",
+    excerpt: "Our lead therapist provides insights into sensory challenges and strategies used at the centre to help children thrive...", // Kept original excerpt
     imageUrl: "https://picsum.photos/400/250?random=10",
     imageAlt: "Therapy session with sensory tools",
     slug: "understanding-sensory-processing",
-    aiHint: "therapy sensory tools children",
+    aiHint: "therapy sensory tools children autism",
   },
-  // Add more placeholder posts
 ];
 
 export default function BlogPage() {
@@ -46,7 +75,7 @@ export default function BlogPage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold tracking-tight">Stories & Updates</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-          Stay connected with the latest news, heartwarming stories, and insights from One Love Centre.
+          Stay connected with the latest news, heartwarming stories, and insights from One Love Autism Children’s Centre.
         </p>
       </div>
 
@@ -92,7 +121,7 @@ export default function BlogPage() {
 
         {/* CMS Integration Note - FOR DEVELOPER */}
          <div className="mt-16 p-4 bg-yellow-100 border border-yellow-300 rounded-md text-yellow-800 text-sm text-center">
-             <strong>Developer Note:</strong> Blog posts are currently placeholders. CMS integration (e.g., using a headless CMS like Contentful, Strapi, or Sanity) is needed to allow staff to manage and publish content dynamically. The `/blog/[slug]` route needs to be created to display full posts.
+             <strong>Developer Note:</strong> Blog posts are currently placeholders. CMS integration is needed to allow staff to manage and publish content dynamically. Individual blog post pages (e.g., `/blog/[slug]`) need to be created to display full content.
          </div>
 
     </div>

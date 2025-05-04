@@ -5,7 +5,7 @@ import * as React from "react";
 import Link from "next/link";
 import { HeartHandshake, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from "@/components/ui/sheet"; // Import SheetTitle
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 
@@ -29,7 +29,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2 text-primary font-semibold text-lg" aria-label="One Love Centre Home">
           {/* Using HeartHandshake as a placeholder for the logo */}
           <HeartHandshake className="h-6 w-6" />
-          <span>One Love Centre</span>
+          <span>One Love Centre</span> {/* Updated title */}
         </Link>
 
         {/* Desktop Navigation */}
@@ -65,7 +65,7 @@ export function Header() {
              <div className="flex justify-between items-center p-4 border-b">
                <Link href="/" className="flex items-center gap-2 text-primary font-semibold text-lg" onClick={() => setIsOpen(false)}>
                  <HeartHandshake className="h-6 w-6" />
-                 <span>One Love Centre</span>
+                 <span>One Love Centre</span> {/* Updated title */}
                </Link>
                <SheetClose asChild>
                  <Button variant="ghost" size="icon">

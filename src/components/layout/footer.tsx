@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HeartHandshake, Mail, Phone, MapPin, Linkedin, Facebook, Twitter, Instagram, Youtube } from "lucide-react"; // Assuming WhatsApp isn't in lucide
+import { HeartHandshake, Mail, Phone, MapPin, Facebook, Instagram, Youtube } from "lucide-react"; // Removed Linkedin, Twitter
 
 // Inline SVG for WhatsApp Icon
 const WhatsAppIcon = () => (
@@ -19,13 +19,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Column 1: Logo and About */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2 text-primary font-semibold text-lg" aria-label="One Love Centre Home">
+            <Link href="/" className="flex items-center gap-2 text-primary font-semibold text-lg" aria-label="One Love Autism Children’s Centre Home">
               <HeartHandshake className="h-7 w-7" />
               <span>One Love Centre</span>
             </Link>
             <p className="text-sm">
               Empowering children with autism and neurodevelopmental disabilities in Kabale District, Uganda through education, therapy, and community support.
             </p>
+             <p className="text-xs mt-2">Registered Name: One Love Autism Children’s Centre Kabale</p>
           </div>
 
           {/* Column 2: Quick Links */}
@@ -51,27 +52,25 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 flex-shrink-0" />
-                {/* Replace with actual phone */}
-                <a href="tel:+256XXXXXXXXX" className="hover:text-primary transition-colors">+256 XXX XXXXXX</a>
+                {/* Updated phone number */}
+                <a href="tel:+256782860084" className="hover:text-primary transition-colors">+256 782 860084</a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 flex-shrink-0" />
-                 {/* Replace with actual email */}
-                <a href="mailto:info@onelovecentre.org" className="hover:text-primary transition-colors">info@onelovecentre.org</a>
+                 {/* Updated email */}
+                <a href="mailto:oneloveacck@gmail.com" className="hover:text-primary transition-colors">oneloveacck@gmail.com</a>
               </div>
                <div className="flex items-center gap-2">
                  <WhatsAppIcon />
-                 {/* Replace with actual WhatsApp link/number */}
-                 <a href="https://wa.me/256XXXXXXXXX" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Chat on WhatsApp</a>
+                 {/* Updated WhatsApp link/number */}
+                 <a href="https://wa.me/256782860084" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Chat on WhatsApp</a>
               </div>
             </address>
             <div className="flex space-x-4 pt-2">
-              {/* Replace # with actual social links */}
-              <a href="#" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Facebook"><Facebook className="h-5 w-5" /></a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Twitter"><Twitter className="h-5 w-5" /></a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram"><Instagram className="h-5 w-5" /></a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn"><Linkedin className="h-5 w-5" /></a>
-               <a href="#" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="YouTube"><Youtube className="h-5 w-5" /></a>
+              {/* Updated social links */}
+              <a href="https://m.facebook.com/p/One-Love-Autism-Childrens-Centre-Kabale-100070132868066/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Facebook"><Facebook className="h-5 w-5" /></a>
+              <a href="https://www.instagram.com/one_love_autisim_center?utm_source=qr&igsh=MXM2Zno4czk2cnEyZQ==" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram"><Instagram className="h-5 w-5" /></a>
+               <a href="#" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="YouTube"><Youtube className="h-5 w-5" /></a> {/* Keep or remove YouTube as needed */}
             </div>
           </div>
         </div>

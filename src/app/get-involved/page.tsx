@@ -1,64 +1,26 @@
 
-"use client"; // Required for form handling
+"use client"; // Required for specific hooks/interactions if added later
 
 import * as React from "react";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import * as z from "zod";
+// Removed form imports as form is replaced by contact info
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
-import { Checkbox } from "@/components/ui/checkbox";
-import { toast } from "@/hooks/use-toast";
-import { HandHeart, ListChecks, CalendarClock, DollarSign, Gift } from "lucide-react";
+// Removed Form, Input, Select, Textarea, Checkbox imports
+// Removed toast import as form submission is handled via direct contact
+import { HandHeart, ListChecks, CalendarClock, DollarSign, Gift, Phone, MessageSquare } from "lucide-react";
 
-// Define Zod schema for the donation form
-const donationFormSchema = z.object({
-  amount: z.coerce.number().min(1, { message: "Please enter a donation amount." }),
-  frequency: z.enum(["one-time", "monthly"]),
-  firstName: z.string().min(1, { message: "First name is required." }),
-  lastName: z.string().min(1, { message: "Last name is required." }),
-  email: z.string().email({ message: "Please enter a valid email address." }),
-  phone: z.string().optional(),
-  coverFee: z.boolean().default(false).optional(),
-  comment: z.string().optional(),
-  // Add fields for payment gateway integration later (e.g., card details, nonce)
-});
+// Inline SVG for WhatsApp Icon
+const WhatsAppIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+    <path d="M19.1 17.9a9.9 9.9 0 0 1-14.2-14.2"></path>
+  </svg>
+);
 
-type DonationFormValues = z.infer<typeof donationFormSchema>;
-
-// Default values
-const defaultValues: Partial<DonationFormValues> = {
-  frequency: "one-time",
-  amount: 25, // Default donation amount
-  coverFee: false,
-};
 
 export default function GetInvolvedPage() {
-
-   const form = useForm<DonationFormValues>({
-    resolver: zodResolver(donationFormSchema),
-    defaultValues,
-    mode: "onChange",
-  });
-
-  // Placeholder submit handler
-  function onSubmit(data: DonationFormValues) {
-     console.log("Donation Data:", data);
-     // TODO: Integrate with actual payment gateway API
-     // Show success message (placeholder)
-      toast({
-        title: "Donation Submitted (Placeholder)",
-        description: `Thank you for your ${data.frequency} donation of $${data.amount}! (Payment processing not implemented yet)`,
-        variant: "default", // Use default style for now
-      });
-      // Optionally reset the form: form.reset();
-  }
 
   // Placeholder wishlist items
   const wishlistItems = [
@@ -70,19 +32,23 @@ export default function GetInvolvedPage() {
     { id: 6, name: "Office supplies (printer paper, pens)", icon: <Gift className="h-5 w-5 text-primary mr-2"/> },
   ];
 
+  const donationPhoneNumber = "+256782860084";
+  const whatsappLink = `https://wa.me/256782860084`; // Use the provided number
+
+
   return (
     <div className="container py-12 md:py-20 px-4 md:px-6">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold tracking-tight">Get Involved</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-          Your support makes a world of difference. Discover how you can contribute to the future of children at One Love Centre.
+          Your support makes a world of difference. Discover how you can contribute to the future of children at One Love Autism Children’s Centre.
         </p>
       </div>
 
       {/* Main Content Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
 
-        {/* Left Column (Donation Form) */}
+        {/* Left Column (Donation Info) */}
         <div className="lg:col-span-3" id="donate">
           <Card className="shadow-lg">
             <CardHeader>
@@ -91,155 +57,36 @@ export default function GetInvolvedPage() {
                   <CardTitle className="text-3xl">Make a Donation</CardTitle>
                </div>
               <CardDescription>
-                Your contribution directly supports our programs, providing vital resources for education, therapy, and care. Choose a one-time or recurring monthly donation.
+                 Support our work directly by making a donation. Currently, we primarily accept donations via MTN Mobile Money in Ugandan Shillings (UGX). Please contact us via phone or WhatsApp to get the details and arrange your contribution. Your generosity provides vital resources for our children's education, therapy, and care.
               </CardDescription>
             </CardHeader>
-            <CardContent>
-               <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                     {/* Amount & Frequency */}
-                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <FormField
-                          control={form.control}
-                          name="amount"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel>Amount (USD)</FormLabel>
-                              <FormControl>
-                                <Input type="number" placeholder="Enter amount" {...field} />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                         <FormField
-                           control={form.control}
-                           name="frequency"
-                           render={({ field }) => (
-                             <FormItem>
-                               <FormLabel>Frequency</FormLabel>
-                                <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                  <FormControl>
-                                    <SelectTrigger>
-                                      <SelectValue placeholder="Select frequency" />
-                                    </SelectTrigger>
-                                  </FormControl>
-                                  <SelectContent>
-                                    <SelectItem value="one-time">One-Time</SelectItem>
-                                    <SelectItem value="monthly">Monthly</SelectItem>
-                                  </SelectContent>
-                                </Select>
-                               <FormMessage />
-                             </FormItem>
-                           )}
-                         />
-                     </div>
-
-                      {/* Personal Information */}
-                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                         <FormField
-                           control={form.control}
-                           name="firstName"
-                           render={({ field }) => (
-                             <FormItem>
-                               <FormLabel>First Name</FormLabel>
-                               <FormControl>
-                                 <Input placeholder="Your first name" {...field} />
-                               </FormControl>
-                               <FormMessage />
-                             </FormItem>
-                           )}
-                         />
-                         <FormField
-                           control={form.control}
-                           name="lastName"
-                           render={({ field }) => (
-                             <FormItem>
-                               <FormLabel>Last Name</FormLabel>
-                               <FormControl>
-                                 <Input placeholder="Your last name" {...field} />
-                               </FormControl>
-                               <FormMessage />
-                             </FormItem>
-                           )}
-                         />
-                      </div>
-                      <FormField
-                        control={form.control}
-                        name="email"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Email Address</FormLabel>
-                            <FormControl>
-                              <Input type="email" placeholder="your.email@example.com" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                      <FormField
-                        control={form.control}
-                        name="phone"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Phone Number (Optional)</FormLabel>
-                            <FormControl>
-                              <Input type="tel" placeholder="Your phone number" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-
-                       {/* Optional Fields */}
-                       <FormField
-                         control={form.control}
-                         name="comment"
-                         render={({ field }) => (
-                           <FormItem>
-                             <FormLabel>Comment (Optional)</FormLabel>
-                             <FormControl>
-                               <Textarea placeholder="Leave a comment..." {...field} />
-                             </FormControl>
-                             <FormMessage />
-                           </FormItem>
-                         )}
-                       />
-                       {/* <FormField
-                         control={form.control}
-                         name="coverFee"
-                         render={({ field }) => (
-                           <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md border p-4 shadow-sm">
-                             <FormControl>
-                               <Checkbox
-                                 checked={field.value}
-                                 onCheckedChange={field.onChange}
-                               />
-                             </FormControl>
-                             <div className="space-y-1 leading-none">
-                               <FormLabel>
-                                 Optionally add [X]% to cover transaction fees?
-                               </FormLabel>
-                               <FormDescription>
-                                 This ensures 100% of your intended donation reaches us.
-                               </FormDescription>
-                             </div>
-                           </FormItem>
-                         )}
-                       /> */}
-
-                      {/* Payment Gateway Placeholder */}
-                       <div className="border p-4 rounded-md bg-muted/50 text-center text-muted-foreground">
-                         <p className="text-sm font-semibold mb-2">Secure Payment Processing</p>
-                         <p className="text-xs">Payment gateway integration (e.g., Stripe, PayPal) will appear here. For now, this is a placeholder.</p>
-                         {/* Add payment element from Stripe/PayPal here */}
-                       </div>
-
-                    <Button type="submit" className="w-full" size="lg">
-                       {form.getValues("frequency") === "monthly" ? "Become a Monthly Donor" : "Donate Now"}
-                     </Button>
-                  </form>
-               </Form>
+            <CardContent className="space-y-4">
+               <div className="border p-4 rounded-md bg-muted/50">
+                 <h4 className="font-semibold mb-2 text-foreground">How to Donate:</h4>
+                 <p className="text-sm text-muted-foreground mb-3">
+                   Please contact Gabrielle Eder via phone or WhatsApp to arrange your Mobile Money donation:
+                 </p>
+                 <div className="space-y-2">
+                   <div className="flex items-center gap-2">
+                     <Phone className="h-4 w-4 text-primary flex-shrink-0" />
+                     <a href={`tel:${donationPhoneNumber}`} className="text-sm font-medium text-primary hover:underline">{donationPhoneNumber}</a>
+                   </div>
+                   <div className="flex items-center gap-2">
+                      <WhatsAppIcon />
+                     <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-primary hover:underline">Chat on WhatsApp</a>
+                   </div>
+                 </div>
+                 <p className="text-xs text-muted-foreground mt-3">
+                    We appreciate your understanding as we work towards more online donation options. All contributions are gratefully received in Ugandan Shillings (UGX).
+                 </p>
+               </div>
+               <Button asChild className="w-full" size="lg">
+                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                   <WhatsAppIcon /> <span className="ml-2">Contact Us via WhatsApp to Donate</span>
+                 </a>
+               </Button>
+                {/* Placeholder for future online donation button */}
+               {/* <Button disabled className="w-full" size="lg">Online Donations Coming Soon</Button> */}
             </CardContent>
           </Card>
         </div>
@@ -291,7 +138,7 @@ export default function GetInvolvedPage() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Recurring donations provide stable funding, allowing us to plan effectively and ensure consistent support for our children throughout the year. Select "Monthly" in the donation form!
+                 Regular giving provides stable funding, allowing us to plan effectively. Please contact us via phone or WhatsApp to discuss setting up a recurring Mobile Money donation.
               </p>
                <Image
                   src="https://picsum.photos/400/200?random=7"

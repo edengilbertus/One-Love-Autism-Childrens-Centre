@@ -13,7 +13,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { toast } from "@/hooks/use-toast";
-import { Mail, Phone, MapPin, Send, Linkedin, Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Facebook, Instagram, Youtube } from "lucide-react"; // Removed Twitter, Linkedin
 // Map component placeholder
 // import { Map } from '@/components/map';
 
@@ -80,8 +80,8 @@ export default function ContactPage() {
      }
   }
 
-   // Placeholder location for Kabale
-   const kabaleLocation = { lat: -1.2505, lng: 29.9886 };
+   // Updated location for One Love Centre
+   const oneLoveCentreLocation = { lat: -1.249803, lng: 29.986100 }; // Approximate coordinates from Google Maps link
 
   return (
     <div className="container py-12 md:py-20 px-4 md:px-6">
@@ -191,31 +191,38 @@ export default function ContactPage() {
                 <div>
                   <h4 className="font-semibold">Address</h4>
                   <p className="text-sm text-muted-foreground">One Love Autism Children’s Centre<br />Kabale District, Uganda</p>
-                  {/* Add more specific address details if available */}
+                   <a
+                      href={`https://www.google.com/maps/search/?api=1&query=${oneLoveCentreLocation.lat},${oneLoveCentreLocation.lng}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-primary hover:underline font-medium mt-1 block"
+                   >
+                      View on Google Maps
+                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold">Phone</h4>
-                  {/* Replace with actual phone */}
-                  <a href="tel:+256XXXXXXXXX" className="text-sm text-muted-foreground hover:text-primary transition-colors">+256 XXX XXXXXX</a>
+                  {/* Updated phone number */}
+                  <a href="tel:+256782860084" className="text-sm text-muted-foreground hover:text-primary transition-colors">+256 782 860084</a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                  <WhatsAppIcon />
                  <div>
                     <h4 className="font-semibold">WhatsApp</h4>
-                    {/* Replace with actual WhatsApp link/number */}
-                    <a href="https://wa.me/256XXXXXXXXX" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">Chat with us</a>
+                    {/* Updated WhatsApp link/number */}
+                    <a href="https://wa.me/256782860084" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">Chat with us (+256 782 860084)</a>
                  </div>
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold">Email</h4>
-                  {/* Replace with actual email */}
-                  <a href="mailto:info@onelovecentre.org" className="text-sm text-muted-foreground hover:text-primary transition-colors">info@onelovecentre.org</a>
+                  {/* Updated email */}
+                  <a href="mailto:oneloveacck@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">oneloveacck@gmail.com</a>
                 </div>
               </div>
             </CardContent>
@@ -227,12 +234,10 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                     <div className="flex space-x-4">
-                      {/* Replace # with actual social links */}
-                      <a href="#" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-muted hover:bg-primary/10 text-muted-foreground hover:text-primary transition-colors" aria-label="Facebook"><Facebook className="h-5 w-5" /></a>
-                      <a href="#" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-muted hover:bg-primary/10 text-muted-foreground hover:text-primary transition-colors" aria-label="Twitter"><Twitter className="h-5 w-5" /></a>
-                      <a href="#" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-muted hover:bg-primary/10 text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram"><Instagram className="h-5 w-5" /></a>
-                      <a href="#" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-muted hover:bg-primary/10 text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn"><Linkedin className="h-5 w-5" /></a>
-                      <a href="#" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-muted hover:bg-primary/10 text-muted-foreground hover:text-primary transition-colors" aria-label="YouTube"><Youtube className="h-5 w-5" /></a>
+                      {/* Updated social links */}
+                      <a href="https://m.facebook.com/p/One-Love-Autism-Childrens-Centre-Kabale-100070132868066/" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-muted hover:bg-primary/10 text-muted-foreground hover:text-primary transition-colors" aria-label="Facebook"><Facebook className="h-5 w-5" /></a>
+                      <a href="https://www.instagram.com/one_love_autisim_center?utm_source=qr&igsh=MXM2Zno4czk2cnEyZQ==" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-muted hover:bg-primary/10 text-muted-foreground hover:text-primary transition-colors" aria-label="Instagram"><Instagram className="h-5 w-5" /></a>
+                      <a href="#" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-muted hover:bg-primary/10 text-muted-foreground hover:text-primary transition-colors" aria-label="YouTube"><Youtube className="h-5 w-5" /></a> {/* Keep YouTube for now or replace if needed */}
                     </div>
                 </CardContent>
            </Card>
@@ -242,21 +247,32 @@ export default function ContactPage() {
                 <CardTitle className="text-xl">Find Us</CardTitle>
              </CardHeader>
              <CardContent>
-               {/* Map Placeholder */}
-               <div className="aspect-square w-full bg-muted rounded-lg shadow-inner flex items-center justify-center text-muted-foreground">
-                   <p>Map of Kabale, Uganda will be displayed here.</p>
-                 {/* <Map center={kabaleLocation} zoom={14} /> */}
+               {/* Embedded Google Map using iframe */}
+               <div className="aspect-square w-full bg-muted rounded-lg shadow-inner overflow-hidden">
+                   <iframe
+                      src={`https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=${oneLoveCentreLocation.lat},${oneLoveCentreLocation.lng}`} // Replace YOUR_GOOGLE_MAPS_API_KEY
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen={false}
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="One Love Autism Children's Centre Location"
+                   ></iframe>
                </div>
                 <div className="text-center mt-3">
                    {/* Link to Google Maps */}
                    <a
-                      href={`https://www.google.com/maps/search/?api=1&query=${kabaleLocation.lat},${kabaleLocation.lng}`}
+                      href={`https://www.google.com/maps/search/?api=1&query=${oneLoveCentreLocation.lat},${oneLoveCentreLocation.lng}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm text-primary hover:underline font-medium"
                    >
                       View on Google Maps
                    </a>
+                </div>
+                <div className="mt-4 p-3 bg-yellow-100 border border-yellow-300 rounded-md text-yellow-800 text-xs text-center">
+                   <strong>Developer Note:</strong> Map embed requires a Google Maps API key. Replace `YOUR_GOOGLE_MAPS_API_KEY` in the `iframe src`.
                 </div>
              </CardContent>
           </Card>
@@ -265,7 +281,7 @@ export default function ContactPage() {
       </div>
        {/* CMS Integration Note - FOR DEVELOPER */}
          <div className="mt-16 p-4 bg-yellow-100 border border-yellow-300 rounded-md text-yellow-800 text-sm text-center">
-             <strong>Developer Note:</strong> The contact form currently logs data to the console. Implement a backend solution (API route or server action) to handle form submissions (e.g., send an email notification). Map requires integration with a library like `@vis.gl/react-google-maps` and a Google Maps API key. Payment gateway integration is needed for the donation form.
+             <strong>Developer Note:</strong> The contact form currently logs data to the console. Implement a backend solution (API route or server action) to handle form submissions. Map requires a valid Google Maps API key. Payment gateway integration is needed for the donation form.
          </div>
     </div>
   );
