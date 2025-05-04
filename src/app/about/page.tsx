@@ -1,10 +1,12 @@
 
+
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Users, History, Target, Eye, LinkIcon, Briefcase } from "lucide-react"; // Added LinkIcon, Briefcase
 // Map component needs API key setup, using placeholder for now
 // import { Map } from '@/components/map'; // Assume a map component exists
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 // Inline SVG for Instagram Icon (if not using lucide-react)
 const InstagramIcon = () => (
@@ -28,12 +30,12 @@ export default function AboutPage() {
       <section className="mb-16 grid md:grid-cols-2 gap-8 items-center">
         <div>
           <Image
-            src="https://picsum.photos/600/400"
-            alt="Children learning at the centre"
+            src="https://i.imgur.com/FTxyfjH.jpeg" // Updated image source
+            alt="Children and staff at One Love Autism Children's Centre" // Updated alt text
             width={600}
             height={400}
             className="rounded-lg shadow-md object-cover w-full"
-            data-ai-hint="children learning classroom uganda"
+            data-ai-hint="children staff group photo uganda" // Updated AI hint
           />
         </div>
         <div className="space-y-6">
@@ -105,7 +107,7 @@ export default function AboutPage() {
                      data-ai-hint="person portrait professional"
                    />
                    <CardTitle className="text-xl">[Team Member Name]</CardTitle> {/* Replace with actual name if available */}
-                   <p className="text-sm text-primary font-medium">Founder & Director</p> {/* Adjust role if needed */}
+                   <p className="text-sm text-primary font-medium">Director / Lead Educator</p> {/* Adjust role if needed */}
                 </CardHeader>
                 <CardContent>
                    <p className="text-sm text-muted-foreground">
@@ -214,13 +216,3 @@ export default function AboutPage() {
     </div>
   );
 }
-
-
-// Helper components for Tooltip (if not already globally available)
-// You might need to import these or ensure they are part of your UI components
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip"
