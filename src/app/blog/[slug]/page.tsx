@@ -37,12 +37,19 @@ async function getPostData(slug: string) {
             title: "Impact Update: Providing Vital Medication Support",
             date: "January 25, 2025",
             author: "One Love Centre Team",
-            imageUrl: "https://picsum.photos/800/400?random=2",
-            imageAlt: "Medication packages",
-            aiHint: "medication pharmacy health uganda",
+            imageUrl: "https://i.imgur.com/XROsOeU.jpeg", // Updated main image
+            imageAlt: "Child receiving medication support",
+            aiHint: "medication pharmacy health uganda child",
             content: `
                 <p class="mb-4">In January 2025, nine children at One Love Autism Children’s Centre who live with autism and other neurological conditions received much-needed medication support through the support of Gabi Eder, our Austrian friend and donor.</p>
+                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+                    <img src="https://i.imgur.com/nuAf0zf.jpeg" alt="Medication packages" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="medication packages health uganda"/>
+                    <img src="https://i.imgur.com/g1ylOtI.jpeg" alt="Child receiving care" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="child health care uganda"/>
+                </div>
                 <p class="mb-4">These children rely on daily medicines like Sodium Valproate, Carbamazepine, Diazepam, and Folic Acid to help manage seizures, stabilize mood, and support their overall health.</p>
+                 <div class="my-6">
+                     <img src="https://i.imgur.com/0L1wlUz.jpeg" alt="Staff organizing medications" class="rounded-lg shadow-md object-cover w-full mx-auto max-w-md" data-ai-hint="staff organizing medication uganda"/>
+                 </div>
                 <p class="mb-4">For many families, accessing these essential medicines regularly is a challenge due to cost and availability. By providing these medication packets, we are helping our children stay healthy, attend school, and participate more fully in daily life.</p>
                 <p class="mb-4">We extend our sincere gratitude to Gabi Eder for her continuous support, which directly impacts the well-being of our children.</p>
             `,
@@ -52,11 +59,15 @@ async function getPostData(slug: string) {
             title: "Promoting Dignity: Menstrual Hygiene Support for Girls",
             date: "January 20, 2025",
             author: "One Love Centre Team",
-            imageUrl: "https://picsum.photos/800/400?random=3",
-            imageAlt: "Reusable menstrual pads",
-            aiHint: "menstrual hygiene pads girls education uganda",
+            imageUrl: "https://i.imgur.com/kSN8Z8Z.jpeg", // Updated main image
+            imageAlt: "Girls receiving hygiene packs",
+            aiHint: "menstrual hygiene pads girls education uganda dignity",
             content: `
                 <p class="mb-4">In January 2025, five girls under the care of One Love Autism Children’s Centre received washable sanitary pads as part of our menstrual hygiene support program.</p>
+                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+                    <img src="https://i.imgur.com/Cx96hbv.jpeg" alt="Washable sanitary pads" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="reusable menstrual pads hygiene uganda"/>
+                    <img src="https://i.imgur.com/Hcrpkl4.jpeg" alt="Girls learning about hygiene" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="girls health education uganda"/>
+                </div>
                 <p class="mb-4">For girls with autism and special needs, managing menstruation can be challenging — especially in communities where access to sanitary products is limited. By providing reusable, eco-friendly pads, we are promoting dignity, comfort, and confidence for our girls, ensuring they can continue attending school and participating in daily activities without interruption.</p>
                 <p class="mb-4">This initiative is a crucial step in supporting the holistic well-being and inclusion of the girls at our centre.</p>
             `,
@@ -66,12 +77,20 @@ async function getPostData(slug: string) {
             title: "Mothers' Initiative Brings Warmth: A Blanket Drive Success",
             date: "December 15, 2024",
             author: "One Love Centre Team",
-            imageUrl: "https://picsum.photos/800/400?random=4",
-            imageAlt: "Children happy with new blankets",
-            aiHint: "children blankets warm community uganda",
+            imageUrl: "https://i.imgur.com/KuVFrl3.jpeg", // Updated main image (cover)
+            imageAlt: "Child happy with new blanket",
+            aiHint: "children blankets warm community uganda mother",
             content: `
                 <p class="mb-4">In December 2024, 30 children at One Love Autism Children’s Centre received warm blankets — a special gift from their own mothers, who came together to make this possible.</p>
                 <p class="mb-4">Throughout the year, these hardworking mothers, many from low-income and resource-limited households, were encouraged to save small amounts through our support groups. At the end of the year, they used their collective savings to buy something meaningful they might otherwise struggle to afford — new blankets to keep their children warm and comfortable.</p>
+                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 my-6">
+                    <img src="https://i.imgur.com/Wqmxotv.jpeg" alt="Children receiving blankets" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="children blankets donation uganda"/>
+                    <img src="https://i.imgur.com/4Q7XGpz.jpeg" alt="Mother giving blanket to child" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="mother child blanket gift uganda"/>
+                    <img src="https://i.imgur.com/Xg15BOn.jpeg" alt="Children happy with blankets" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="children happy blankets community uganda"/>
+                 </div>
+                 <div class="my-6">
+                     <img src="https://i.imgur.com/fVhAjaQ.jpeg" alt="More children with blankets" class="rounded-lg shadow-md object-cover w-full mx-auto max-w-md" data-ai-hint="children donation warmth uganda"/>
+                 </div>
                 <p class="mb-4">This effort added to the beautiful bedsheets donated earlier by our friends, creating a full set of cozy bedding for each child. It's a wonderful example of community strength and parental love making a tangible difference.</p>
             `,
              tags: ["Impact", "Community", "Parents", "Donation"],
@@ -81,28 +100,36 @@ async function getPostData(slug: string) {
             title: "Empowering Parents: Highlights from Our Support Groups",
             date: "November 10, 2024",
             author: "One Love Centre Team",
-            imageUrl: "https://picsum.photos/800/400?random=9",
+            imageUrl: "https://picsum.photos/800/400?random=9", // Placeholder, could use sensory images if appropriate
             imageAlt: "Parents in a group discussion",
             aiHint: "parents support group uganda meeting community",
             content: `
                 <p class="mb-4">Our parent support groups and counseling sessions are a cornerstone of the support we offer at One Love Autism Children's Centre. These regular meetups provide a safe space for parents and caregivers to connect, share experiences, learn practical strategies, and build a vital support network.</p>
-                <p class="mb-4">Recent sessions have focused on [Mention specific topics if known, e.g., understanding communication challenges, managing challenging behaviors, navigating educational resources]. Through shared knowledge and mutual encouragement, parents feel less isolated and better equipped to support their children's development.</p>
+                <p class="mb-4">Recent sessions have focused on understanding communication challenges, managing challenging behaviors, navigating educational resources, and utilizing sensory strategies at home. Through shared knowledge and mutual encouragement, parents feel less isolated and better equipped to support their children's development.</p>
+                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+                     {/* Optional: Add relevant images if available, or keep placeholder */}
+                    <img src="https://picsum.photos/400/250?random=11" alt="Group discussion" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="parents meeting discussion uganda"/>
+                    <img src="https://picsum.photos/400/250?random=12" alt="Counseling session" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="counseling support group uganda"/>
+                 </div>
                 <p class="mb-4">We believe that empowering parents is key to creating a supportive environment for every child to thrive.</p>
             `,
-            tags: ["Parents", "Support Group", "Community", "Workshop"],
+            tags: ["Parents", "Support Group", "Community", "Workshop", "Counseling"],
         },
         "understanding-sensory-processing": {
             title: "Understanding Sensory Processing in Children with Autism",
             date: "August 5, 2024",
             author: "Lead Therapist", // Example author
-            imageUrl: "https://picsum.photos/800/400?random=10",
+            imageUrl: "https://i.imgur.com/k6ZCCU7.jpeg", // Updated main image
             imageAlt: "Therapy session with sensory tools",
-            aiHint: "therapy sensory tools children autism",
+            aiHint: "therapy sensory tools children autism uganda",
             content: `
                 <p class="mb-4">Children with autism often experience the world differently through their senses. Some might be overly sensitive to sounds, lights, or touch, while others might seek out intense sensory input. This is known as Sensory Processing Disorder (SPD) or sensory differences.</p>
                 <p class="mb-4">At One Love Centre, our occupational therapists work closely with children to understand their unique sensory profiles. We use various strategies and tools, such as swings, weighted blankets, therapy balls, and textured toys, to help children regulate their sensory systems.</p>
+                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+                    <img src="https://i.imgur.com/Cmu58fb.jpeg" alt="Child using sensory equipment" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="child sensory therapy autism uganda"/>
+                    <img src="https://i.imgur.com/vJ8aGlS.jpeg" alt="Therapist working with child" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="therapist child sensory play uganda"/>
+                </div>
                 <p class="mb-4">Understanding and addressing sensory needs can significantly improve a child's ability to focus, learn, interact socially, and manage their emotions. Our goal is to create a sensory-friendly environment and equip children with coping strategies for everyday situations.</p>
-                <p class="mb-4">[Optional: Add a specific example or strategy used].</p>
             `,
             tags: ["Autism", "Therapy", "Sensory Processing", "Education"],
         },
@@ -158,8 +185,8 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
           <Image
             src={post.imageUrl}
             alt={post.imageAlt}
-            layout="fill"
-            objectFit="cover"
+            fill={true}
+            style={{objectFit:"cover"}}
             priority // Load main image quickly
             data-ai-hint={post.aiHint}
           />
@@ -167,7 +194,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
 
         {/* Post Content */}
         <div
-            className="text-foreground leading-relaxed"
+            className="text-foreground leading-relaxed [&_img]:mb-4 [&_img]:max-h-96 [&_img]:object-contain" // Added styling for embedded images
             dangerouslySetInnerHTML={{ __html: post.content }} // Render HTML content safely
         />
 
@@ -190,8 +217,8 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
 
        {/* Call to Action */}
        <div className="mt-16 text-center border-t pt-10">
-            <h3 className="text-2xl font-semibold mb-4">Support Our Work</h3>
-            <p className="text-muted-foreground mb-6">Your donation helps us continue providing essential services and support to children and families.</p>
+            <h3 className="text-2xl font-semibold mb-4">Help Us Build Our Future School</h3>
+            <p className="text-muted-foreground mb-6">Your donation helps us provide essential services and work towards building a dedicated school facility for our children.</p>
             <Button asChild size="lg">
                 <Link href="/get-involved#donate">Donate Now</Link>
             </Button>
@@ -217,29 +244,35 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     return { title: "Post Not Found" };
   }
 
+   // Basic text extraction for description
+   const excerpt = post.content.substring(0, 160).replace(/<[^>]*>?/gm, '').replace(/\s+/g, ' ').trim() + '...';
+
+
   return {
     title: `${post.title} | One Love Autism Children's Centre Blog`, // Updated Name
-    description: post.content.substring(0, 160).replace(/<[^>]*>?/gm, ''), // Simple excerpt from content
+    description: excerpt, // Simple excerpt from content
     openGraph: {
       title: post.title,
-      description: post.content.substring(0, 160).replace(/<[^>]*>?/gm, ''),
+      description: excerpt,
       images: [
         {
           url: post.imageUrl,
-          width: 800, // Adjust if known
-          height: 400, // Adjust if known
+          width: 800, // Adjust if known, otherwise default
+          height: 400, // Adjust if known, otherwise default
           alt: post.imageAlt,
         },
       ],
       type: 'article',
-      publishedTime: new Date(post.date).toISOString(), // Assuming date is parsable
-      authors: [post.author || 'One Love Centre Team'],
+      // publishedTime: new Date(post.date).toISOString(), // Assuming date is parsable - handle potential parse errors if date format varies
+       authors: [post.author || 'One Love Centre Team'],
     },
      twitter: {
        card: 'summary_large_image',
        title: post.title,
-       description: post.content.substring(0, 160).replace(/<[^>]*>?/gm, ''),
+       description: excerpt,
        images: [post.imageUrl],
      },
   };
 }
+
+    

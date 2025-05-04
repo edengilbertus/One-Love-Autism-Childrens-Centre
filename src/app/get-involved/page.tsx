@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 // Removed Form, Input, Select, Textarea, Checkbox imports
 // Removed toast import as form submission is handled via direct contact
-import { HandHeart, ListChecks, CalendarClock, DollarSign, Gift, Phone, MessageSquare } from "lucide-react";
+import { HandHeart, ListChecks, CalendarClock, DollarSign, Gift, Phone, MessageSquare, School } from "lucide-react"; // Added School icon
 
 // Inline SVG for WhatsApp Icon
 const WhatsAppIcon = () => (
@@ -30,6 +30,7 @@ export default function GetInvolvedPage() {
     { id: 4, name: "Children's books (picture books)", icon: <Gift className="h-5 w-5 text-primary mr-2"/> },
     { id: 5, name: "Sensory integration tools", icon: <Gift className="h-5 w-5 text-primary mr-2"/> },
     { id: 6, name: "Office supplies (printer paper, pens)", icon: <Gift className="h-5 w-5 text-primary mr-2"/> },
+    { id: 7, name: "Building materials (bricks, cement - for future school)", icon: <School className="h-5 w-5 text-primary mr-2"/> }, // Added wishlist item for school
   ];
 
   const donationPhoneNumber = "+256782860084";
@@ -41,7 +42,7 @@ export default function GetInvolvedPage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold tracking-tight">Get Involved</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-          Your support makes a world of difference. Discover how you can contribute to the future of children at One Love Autism Children's Centre. {/* Updated Name */}
+          Your support makes a world of difference. Discover how you can contribute to the future of children at One Love Autism Children's Centre, including our goal to build a dedicated school facility. {/* Updated Name & Goal */}
         </p>
       </div>
 
@@ -54,35 +55,49 @@ export default function GetInvolvedPage() {
             <CardHeader>
                <div className="flex items-center gap-3 mb-2">
                   <DollarSign className="h-8 w-8 text-primary"/>
-                  <CardTitle className="text-3xl">Make a Donation</CardTitle>
+                  <CardTitle className="text-3xl">Make a Donation - Help Build Our School!</CardTitle> {/* Emphasize school */}
                </div>
               <CardDescription>
-                 Support our work directly by making a donation. Currently, we primarily accept donations via MTN Mobile Money in Ugandan Shillings (UGX). Please contact us via phone or WhatsApp to get the details and arrange your contribution. Your generosity provides vital resources for our children's education, therapy, and care.
+                 Support our daily work and contribute to our dream of building a dedicated school! Currently, we primarily accept donations via MTN Mobile Money in Ugandan Shillings (UGX). Please contact Gabrielle Eder via phone or WhatsApp to get the specific MTN Mobile Money details and arrange your contribution. Your generosity provides vital resources and helps build a brighter future.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
                <div className="border p-4 rounded-md bg-muted/50">
-                 <h4 className="font-semibold mb-2 text-foreground">How to Donate:</h4>
+                 <h4 className="font-semibold mb-2 text-foreground">How to Donate (Mobile Money):</h4>
                  <p className="text-sm text-muted-foreground mb-3">
-                   Please contact Gabrielle Eder via phone or WhatsApp to arrange your Mobile Money donation:
+                   1. Contact Gabrielle Eder to confirm the current MTN Mobile Money number and recipient name:
                  </p>
-                 <div className="space-y-2">
+                 <div className="space-y-2 mb-3">
                    <div className="flex items-center gap-2">
                      <Phone className="h-4 w-4 text-primary flex-shrink-0" />
                      <a href={`tel:${donationPhoneNumber}`} className="text-sm font-medium text-primary hover:underline">{donationPhoneNumber}</a>
                    </div>
                    <div className="flex items-center gap-2">
                       <WhatsAppIcon />
-                     <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-primary hover:underline">Chat on WhatsApp</a>
+                     <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-primary hover:underline">Chat on WhatsApp to get details</a>
                    </div>
                  </div>
+                  <p className="text-sm text-muted-foreground mb-3">
+                   2. Once you have the details, use your MTN Mobile Money service to send the donation in Ugandan Shillings (UGX).
+                 </p>
                  <p className="text-xs text-muted-foreground mt-3">
-                    We appreciate your understanding as we work towards more online donation options. All contributions are gratefully received in Ugandan Shillings (UGX).
+                    We appreciate your understanding as we work towards more online donation options. Please confirm details with Gabrielle before sending.
                  </p>
                </div>
-               <Button asChild className="w-full" size="lg">
+               {/* School Building Vision Image */}
+                <div className="mt-4">
+                    <Image
+                      src="https://picsum.photos/600/300?random=18" // Placeholder - Use a compelling image related to building/future school
+                      alt="Vision for the future One Love Centre school"
+                      width={600}
+                      height={300}
+                      className="rounded-md object-cover w-full shadow-md"
+                      data-ai-hint="school building vision construction children uganda"
+                    />
+                </div>
+               <Button asChild className="w-full mt-4" size="lg">
                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                   <WhatsAppIcon /> <span className="ml-2">Contact Us via WhatsApp to Donate</span>
+                   <WhatsAppIcon /> <span className="ml-2">Contact via WhatsApp for Donation Details</span>
                  </a>
                </Button>
                 {/* Placeholder for future online donation button */}
@@ -117,7 +132,7 @@ export default function GetInvolvedPage() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Help us provide essential resources by donating items from our wishlist. Every item contributes directly to our children's learning and well-being.
+                Help us provide essential resources by donating items from our wishlist. Every item contributes directly to our children's learning and well-being, and helps us prepare for our future school.
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 {wishlistItems.map(item => (
@@ -138,7 +153,7 @@ export default function GetInvolvedPage() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                 Regular giving provides stable funding, allowing us to plan effectively. Please contact us via phone or WhatsApp to discuss setting up a recurring Mobile Money donation.
+                 Regular giving provides stable funding for daily operations and our school building fund. Please contact us via phone or WhatsApp to discuss setting up a recurring Mobile Money donation.
               </p>
                <Image
                   src="https://picsum.photos/400/200?random=7"
@@ -146,7 +161,7 @@ export default function GetInvolvedPage() {
                   width={400}
                   height={200}
                   className="rounded-md object-cover w-full"
-                  data-ai-hint="child happy learning uganda sustainable"
+                  data-ai-hint="child happy learning uganda sustainable school fund"
                 />
             </CardContent>
           </Card>
@@ -157,3 +172,5 @@ export default function GetInvolvedPage() {
     </div>
   );
 }
+
+    

@@ -18,11 +18,11 @@ export default function ProgramsPage() {
         <Card className="shadow-lg overflow-hidden">
           <div className="relative h-60 w-full">
             <Image
-              src="https://picsum.photos/600/400?random=5"
-              alt="Child in a therapy session"
+              src="https://i.imgur.com/vJ8aGlS.jpeg" // Relevant image
+              alt="Therapist working with child using sensory tools"
               layout="fill"
               objectFit="cover"
-              data-ai-hint="child therapy session learning uganda"
+              data-ai-hint="child therapy session learning uganda sensory"
             />
           </div>
           <CardHeader className="flex flex-row items-start gap-4 p-6">
@@ -48,6 +48,17 @@ export default function ProgramsPage() {
                 <li>Social Skills Groups</li>
                 <li>Sensory Integration Activities</li>
              </ul>
+             {/* Optional: Add another small relevant image */}
+             <div className="pt-4">
+                 <Image
+                    src="https://i.imgur.com/Cmu58fb.jpeg" // Another therapy image
+                    alt="Child engaged in learning activity"
+                    width={400}
+                    height={250}
+                    className="rounded-md object-cover w-full"
+                    data-ai-hint="child learning education therapy uganda"
+                />
+             </div>
           </CardContent>
         </Card>
 
@@ -55,11 +66,11 @@ export default function ProgramsPage() {
         <Card className="shadow-lg overflow-hidden">
            <div className="relative h-60 w-full">
             <Image
-              src="https://picsum.photos/600/400?random=6"
+              src="https://picsum.photos/600/400?random=6" // Placeholder for now, replace if specific image available
               alt="Children learning life skills"
               layout="fill"
               objectFit="cover"
-              data-ai-hint="children life skills training uganda"
+              data-ai-hint="children life skills training uganda crafts gardening"
             />
           </div>
           <CardHeader className="flex flex-row items-start gap-4 p-6">
@@ -84,6 +95,17 @@ export default function ProgramsPage() {
                 <li>Community Safety Awareness</li>
                 <li>Following Instructions and Routines</li>
              </ul>
+             {/* Optional: Add another small relevant image */}
+             <div className="pt-4">
+                 <Image
+                    src="https://picsum.photos/400/250?random=17" // Placeholder, ideally show crafts or gardening
+                    alt="Students participating in vocational training"
+                    width={400}
+                    height={250}
+                    className="rounded-md object-cover w-full"
+                    data-ai-hint="students vocational training crafts uganda"
+                />
+             </div>
           </CardContent>
         </Card>
       </div>
@@ -96,17 +118,30 @@ export default function ProgramsPage() {
           <div className="flex-grow text-center md:text-left">
             <h2 className="text-3xl font-semibold mb-3">Parent & Caregiver Support</h2>
             <p className="text-muted-foreground mb-4">
-              We believe that supporting families is crucial. Our parent and caregiver programs provide resources, training, and a supportive community network.
+              We believe that supporting families is crucial. Our parent and caregiver programs include regular meetups, group counseling sessions, and training workshops, providing resources and a supportive community network.
             </p>
              <ul className="list-none space-y-2 text-muted-foreground text-left inline-block mx-auto md:mx-0">
                 <li className="flex items-center gap-2"><Stethoscope className="h-4 w-4 text-primary flex-shrink-0"/><span>Training Workshops on Autism & Related Conditions</span></li>
-                <li className="flex items-center gap-2"><Stethoscope className="h-4 w-4 text-primary flex-shrink-0"/><span>Support Group Meetings</span></li>
-                <li className="flex items-center gap-2"><Stethoscope className="h-4 w-4 text-primary flex-shrink-0"/><span>Home Visit Consultations</span></li>
+                <li className="flex items-center gap-2"><Stethoscope className="h-4 w-4 text-primary flex-shrink-0"/><span>Support Group Meetings & Counseling</span></li>
+                <li className="flex items-center gap-2"><Stethoscope className="h-4 w-4 text-primary flex-shrink-0"/><span>Home Visit Consultations (as needed)</span></li>
                 <li className="flex items-center gap-2"><Stethoscope className="h-4 w-4 text-primary flex-shrink-0"/><span>Resource Sharing and Advocacy Support</span></li>
              </ul>
+             {/* Optional: Add image of parent group */}
+             <div className="pt-4">
+                 <Image
+                    src="https://picsum.photos/400/250?random=9" // Placeholder image from blog list
+                    alt="Parents participating in a support group session"
+                    width={400}
+                    height={250}
+                    className="rounded-md object-cover w-full md:w-2/3 lg:w-1/2 mx-auto md:ml-0"
+                    data-ai-hint="parents support group uganda meeting"
+                />
+             </div>
           </div>
        </section>
 
     </div>
   );
 }
+
+    

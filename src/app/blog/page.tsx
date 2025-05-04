@@ -22,37 +22,37 @@ const blogPosts = [
     title: "Impact Update: Providing Vital Medication Support", // Updated title
     date: "January 25, 2025", // Updated date
     excerpt: "Thanks to Gabi Eder, nine children received crucial medications this month, helping them manage seizures and stay healthy...", // Updated excerpt
-    imageUrl: "https://picsum.photos/400/250?random=2", // Placeholder image
-    imageAlt: "Medication packages",
+    imageUrl: "https://i.imgur.com/XROsOeU.jpeg", // Updated cover image
+    imageAlt: "Child receiving medication support",
     slug: "medication-support", // Updated slug
-    aiHint: "medication pharmacy health uganda",
+    aiHint: "medication pharmacy health uganda child",
   },
    {
     id: 3,
     title: "Promoting Dignity: Menstrual Hygiene Support for Girls", // Updated title
     date: "January 20, 2025", // Updated date
     excerpt: "Five girls received reusable sanitary pads, ensuring comfort, confidence, and continued access to education...", // Updated excerpt
-    imageUrl: "https://picsum.photos/400/250?random=3", // Placeholder image
-    imageAlt: "Reusable menstrual pads",
+    imageUrl: "https://i.imgur.com/kSN8Z8Z.jpeg", // Updated cover image
+    imageAlt: "Girls receiving hygiene packs",
     slug: "menstrual-hygiene", // Updated slug
-    aiHint: "menstrual hygiene pads girls education uganda",
+    aiHint: "menstrual hygiene pads girls education uganda dignity",
   },
     {
     id: 4,
     title: "Mothers' Initiative Brings Warmth: A Blanket Drive Success", // New post title
     date: "December 15, 2024", // New post date
     excerpt: "Discover how hardworking mothers used collective savings to purchase cozy blankets for 30 children at the centre...", // New post excerpt
-    imageUrl: "https://picsum.photos/400/250?random=4", // Placeholder image
-    imageAlt: "Children with new blankets",
+    imageUrl: "https://i.imgur.com/KuVFrl3.jpeg", // Updated cover image
+    imageAlt: "Child happy with new blanket",
     slug: "blanket-drive", // New post slug
-    aiHint: "children blankets warm community uganda",
+    aiHint: "children blankets warm community uganda mother",
   },
    {
     id: 5, // Renumbered ID
     title: "Empowering Parents: Highlights from Our Support Groups", // Updated title
     date: "November 10, 2024", // Example date
     excerpt: "Learn about our recent meetups and counseling sessions designed to equip parents with knowledge and build a strong support network...", // Updated excerpt
-    imageUrl: "https://picsum.photos/400/250?random=9", // Placeholder image
+    imageUrl: "https://picsum.photos/400/250?random=9", // Placeholder image - Keep or update as needed
     imageAlt: "Parents group session",
     slug: "parent-support-groups", // Updated slug
     aiHint: "parents support group uganda meeting community",
@@ -62,10 +62,10 @@ const blogPosts = [
     title: "Understanding Sensory Processing in Children with Autism", // Kept original title
     date: "August 5, 2024",
     excerpt: "Our lead therapist provides insights into sensory challenges and strategies used at the centre to help children thrive...", // Kept original excerpt
-    imageUrl: "https://picsum.photos/400/250?random=10",
+    imageUrl: "https://i.imgur.com/k6ZCCU7.jpeg", // Updated cover image
     imageAlt: "Therapy session with sensory tools",
     slug: "understanding-sensory-processing",
-    aiHint: "therapy sensory tools children autism",
+    aiHint: "therapy sensory tools children autism uganda",
   },
 ];
 
@@ -87,8 +87,8 @@ export default function BlogPage() {
               <Image
                 src={post.imageUrl}
                 alt={post.imageAlt}
-                layout="fill"
-                objectFit="cover"
+                fill={true}
+                style={{objectFit:"cover"}}
                  data-ai-hint={post.aiHint}
               />
             </Link>
@@ -127,3 +127,5 @@ export default function BlogPage() {
     </div>
   );
 }
+
+    

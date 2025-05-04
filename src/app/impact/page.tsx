@@ -1,8 +1,10 @@
 
 import Image from "next/image";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-// Removed Button import as it's not directly used here, donations are linked via href
 import { Accessibility, Pill, Droplets, BedDouble } from "lucide-react";
+import Link from "next/link"; // Import Link
+import { Button } from "@/components/ui/button"; // Import Button
+
 
 interface Project {
   id: number;
@@ -14,6 +16,7 @@ interface Project {
   donor?: string;
   icon?: React.ReactNode;
   aiHint: string;
+  blogSlug?: string; // Optional slug for linking to blog post
 }
 
 const projects: Project[] = [
@@ -27,38 +30,42 @@ const projects: Project[] = [
     donor: "Isabella & Herman Zauscher",
     icon: <Accessibility className="h-6 w-6 text-primary" />,
     aiHint: "children wheelchairs uganda donation happy",
+    blogSlug: "anishas-story",
   },
   {
     id: 2,
     title: "Vital Medication Support Provided", // Updated title
     date: "January 2025",
     description: "Thanks to Gabi Eder, nine children received essential medications like Sodium Valproate and Carbamazepine to manage seizures and support their health.", // Updated description
-    imageUrl: "https://picsum.photos/400/300?random=2",
-    imageAlt: "Medication packages",
+    imageUrl: "https://i.imgur.com/XROsOeU.jpeg", // Updated image
+    imageAlt: "Child receiving medication support",
     donor: "Gabi Eder",
     icon: <Pill className="h-6 w-6 text-primary" />,
-    aiHint: "medication pharmacy health uganda",
+    aiHint: "medication pharmacy health uganda child",
+    blogSlug: "medication-support",
   },
   {
     id: 3,
     title: "Menstrual Hygiene Support for Girls", // Updated title
     date: "January 2025",
     description: "Five girls received washable sanitary pads, promoting dignity and comfort, and ensuring they can attend school without interruption.", // Updated description
-    imageUrl: "https://picsum.photos/400/300?random=3",
-    imageAlt: "Reusable menstrual pads",
+    imageUrl: "https://i.imgur.com/kSN8Z8Z.jpeg", // Updated image
+    imageAlt: "Girls receiving hygiene packs",
     icon: <Droplets className="h-6 w-6 text-primary" />,
-    aiHint: "menstrual hygiene pads girls education uganda",
+    aiHint: "menstrual hygiene pads girls education uganda dignity",
+    blogSlug: "menstrual-hygiene",
   },
   {
     id: 4,
     title: "Warm Blankets from Mothers' Savings", // Updated title
     date: "December 2024",
     description: "Through a collective savings initiative, 30 mothers purchased warm blankets for their children, adding to bedding donated by friends.", // Updated description
-    imageUrl: "https://picsum.photos/400/300?random=4",
-    imageAlt: "Children with new blankets",
+    imageUrl: "https://i.imgur.com/KuVFrl3.jpeg", // Updated image
+    imageAlt: "Child happy with new blanket",
     donor: "Community Mothers' Initiative & Friends", // Updated donor info
     icon: <BedDouble className="h-6 w-6 text-primary" />,
-    aiHint: "children blankets warm community uganda",
+    aiHint: "children blankets warm community uganda mother",
+    blogSlug: "blanket-drive",
   },
   // Add more projects here as needed
 ];
@@ -103,36 +110,37 @@ export default function ImpactPage() {
               {project.donor ? (
                   <p className="text-xs text-muted-foreground italic">Supported by: {project.donor}</p>
               ) : <span/> /* Empty span to maintain layout */}
-              {/* Link to relevant blog post or section if applicable */}
-              {/* Example: Linking wheelchair story to a potential blog post */}
-              {project.id === 1 && (
-                 <a href="/blog/anishas-story" className="text-xs text-primary hover:underline">Read More</a>
-              )}
-               {/* Example: Linking medication story */}
-              {project.id === 2 && (
-                 <a href="/blog/medication-support" className="text-xs text-primary hover:underline">Read More</a>
-              )}
-               {/* Example: Linking hygiene story */}
-              {project.id === 3 && (
-                 <a href="/blog/menstrual-hygiene" className="text-xs text-primary hover:underline">Read More</a>
-              )}
-               {/* Example: Linking blanket story */}
-              {project.id === 4 && (
-                 <a href="/blog/blanket-drive" className="text-xs text-primary hover:underline">Read More</a>
+              {/* Link to relevant blog post if slug exists */}
+              {project.blogSlug && (
+                 <Link href={`/blog/${project.blogSlug}`} className="text-xs text-primary hover:underline">Read More</Link>
               )}
             </CardFooter>
           </Card>
         ))}
       </div>
 
-        <div className="text-center mt-16">
-            <h2 className="text-2xl font-semibold mb-4">Want to contribute to our next success story?</h2>
-            {/* Using a direct link instead of Button component */}
-             <a href="/get-involved#donate" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8">
-                Make a Donation
-             </a>
+       <div className="text-center mt-16">
+            <h2 className="text-2xl font-semibold mb-4">Help Us Build Our Future School</h2>
+            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                Our ultimate goal is to build a dedicated school facility to provide a stable, enriching environment for our children. Your contribution brings us closer to this dream.
+            </p>
+             {/* Grid for school building vision images */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-8">
+                <Image src="https://picsum.photos/300/200?random=13" alt="Future school building concept 1" width={300} height={200} className="rounded-md object-cover w-full shadow-md" data-ai-hint="school building concept drawing exterior"/>
+                <Image src="https://picsum.photos/300/200?random=14" alt="Future school building concept 2" width={300} height={200} className="rounded-md object-cover w-full shadow-md" data-ai-hint="school classroom concept rendering interior"/>
+                <Image src="https://picsum.photos/300/200?random=15" alt="Future school playground concept" width={300} height={200} className="rounded-md object-cover w-full shadow-md" data-ai-hint="school playground children concept design"/>
+                <Image src="https://picsum.photos/300/200?random=16" alt="Future school therapy room concept" width={300} height={200} className="rounded-md object-cover w-full shadow-md" data-ai-hint="therapy room school concept design interior"/>
+            </div>
+            {/* Using Button component with Link */}
+             <Button asChild size="lg">
+                 <Link href="/get-involved#donate">
+                    Make a Donation
+                 </Link>
+             </Button>
         </div>
 
     </div>
   );
 }
+
+    
