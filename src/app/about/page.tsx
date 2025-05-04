@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, Users, History, Target, Eye, LinkIcon, Briefcase } from "lucide-react"; // Added LinkIcon, Briefcase
+import { MapPin, Users, History, Target, Eye, LinkIcon, Briefcase, Phone } from "lucide-react"; // Added LinkIcon, Briefcase, Phone
 // Map component needs API key setup, using placeholder for now
 // import { Map } from '@/components/map'; // Assume a map component exists
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -95,24 +95,28 @@ export default function AboutPage() {
          </div>
          {/* Grid for team members */}
          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Example Team Member Card (Founder/Director - Keep or adjust as needed) */}
+            {/* Twinomugisha Mildred Card */}
             <Card className="text-center">
                 <CardHeader>
                    <Image
-                     src="https://picsum.photos/200/200?grayscale" // Use grayscale for consistency or individual photos
-                     alt="Team Member Name"
+                     src="https://i.imgur.com/tDBdhAi.jpeg" // Updated photo
+                     alt="Twinomugisha Mildred, Director" // Updated alt text
                      width={120}
                      height={120}
-                     className="rounded-full mx-auto mb-4 border-4 border-primary/50"
-                     data-ai-hint="person portrait professional"
+                     className="rounded-full mx-auto mb-4 border-4 border-primary/50 object-cover"
+                     data-ai-hint="person portrait director woman uganda" // Updated AI hint
                    />
-                   <CardTitle className="text-xl">[Team Member Name]</CardTitle> {/* Replace with actual name if available */}
-                   <p className="text-sm text-primary font-medium">Director / Lead Educator</p> {/* Adjust role if needed */}
+                   <CardTitle className="text-xl">Twinomugisha Mildred</CardTitle> {/* Updated name */}
+                   <p className="text-sm text-primary font-medium">Director</p> {/* Updated role */}
                 </CardHeader>
                 <CardContent>
-                   <p className="text-sm text-muted-foreground">
-                     [Brief bio about the founder or team member, their passion and role.]
+                   <p className="text-sm text-muted-foreground mb-3">
+                     Leading the Centre with dedication and passion for supporting children with autism and their families.
                    </p>
+                   <div className="flex justify-center items-center gap-2">
+                     <Phone className="h-4 w-4 text-muted-foreground flex-shrink-0"/>
+                     <a href="tel:+256782860084" className="text-sm text-muted-foreground hover:text-primary transition-colors">+256 782 860084</a>
+                   </div>
                 </CardContent>
             </Card>
             {/* Example Team Member Card 2 */}

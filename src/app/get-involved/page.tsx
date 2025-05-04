@@ -58,14 +58,14 @@ export default function GetInvolvedPage() {
                   <CardTitle className="text-3xl">Make a Donation - Help Build Our School!</CardTitle> {/* Emphasize school */}
                </div>
               <CardDescription>
-                 Support our daily work and contribute to our dream of building a dedicated school! Currently, we primarily accept donations via MTN Mobile Money in Ugandan Shillings (UGX). Please contact Gabrielle Eder via phone or WhatsApp to get the specific MTN Mobile Money details and arrange your contribution. Your generosity provides vital resources and helps build a brighter future.
+                 Support our daily work and contribute to our dream of building a dedicated school! Currently, we primarily accept donations via MTN Mobile Money in Ugandan Shillings (UGX). Please contact Twinomugisha Mildred via phone or WhatsApp to get the specific MTN Mobile Money details and arrange your contribution. Your generosity provides vital resources and helps build a brighter future.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
                <div className="border p-4 rounded-md bg-muted/50">
                  <h4 className="font-semibold mb-2 text-foreground">How to Donate (Mobile Money):</h4>
                  <p className="text-sm text-muted-foreground mb-3">
-                   1. Contact Gabrielle Eder to confirm the current MTN Mobile Money number and recipient name:
+                   1. Contact Twinomugisha Mildred to confirm the current MTN Mobile Money number and recipient name: {/* Updated contact name */}
                  </p>
                  <div className="space-y-2 mb-3">
                    <div className="flex items-center gap-2">
@@ -81,18 +81,18 @@ export default function GetInvolvedPage() {
                    2. Once you have the details, use your MTN Mobile Money service to send the donation in Ugandan Shillings (UGX).
                  </p>
                  <p className="text-xs text-muted-foreground mt-3">
-                    We appreciate your understanding as we work towards more online donation options. Please confirm details with Gabrielle before sending.
+                    We appreciate your understanding as we work towards more online donation options. Please confirm details with Twinomugisha Mildred before sending. {/* Updated contact name */}
                  </p>
                </div>
                {/* School Building Vision Image */}
                 <div className="mt-4">
                     <Image
-                      src="https://picsum.photos/600/300?random=18" // Placeholder - Use a compelling image related to building/future school
-                      alt="Vision for the future One Love Centre school"
+                      src="https://i.imgur.com/zTbQPC9.jpeg" // Updated image source
+                      alt="Vision for the future One Love Centre school classroom with children drawing" // Updated alt text
                       width={600}
                       height={300}
                       className="rounded-md object-cover w-full shadow-md"
-                      data-ai-hint="school building vision construction children uganda"
+                      data-ai-hint="school classroom kids drawing interior uganda" // Updated AI hint
                     />
                 </div>
                <Button asChild className="w-full mt-4" size="lg">
