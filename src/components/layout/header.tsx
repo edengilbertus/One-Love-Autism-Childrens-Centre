@@ -5,7 +5,7 @@ import * as React from "react";
 import Link from "next/link";
 import { HeartHandshake, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from "@/components/ui/sheet"; // Import SheetTitle
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 
@@ -60,6 +60,8 @@ export function Header() {
             </Button>
           </SheetTrigger>
           <SheetContent side="right" className="w-[300px] sm:w-[400px] p-0 bg-background">
+             {/* Add a visually hidden title for accessibility */}
+             <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
              <div className="flex justify-between items-center p-4 border-b">
                <Link href="/" className="flex items-center gap-2 text-primary font-semibold text-lg" onClick={() => setIsOpen(false)}>
                  <HeartHandshake className="h-6 w-6" />
