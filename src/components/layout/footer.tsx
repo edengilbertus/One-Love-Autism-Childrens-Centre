@@ -21,7 +21,7 @@ export function Footer() {
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2 text-primary font-semibold text-lg" aria-label="One Love Autism Children’s Centre Home">
               <HeartHandshake className="h-7 w-7" />
-              <span>One Love Centre</span>
+              <span>One Love Autism Children’s Centre</span> {/* Updated Name */}
             </Link>
             <p className="text-sm">
               Empowering children with autism and neurodevelopmental disabilities in Kabale District, Uganda through education, therapy, and community support.

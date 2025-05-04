@@ -218,7 +218,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 
   return {
-    title: `${post.title} | One Love Autism Children’s Centre Blog`,
+    title: `${post.title} | One Love Autism Children's Centre Blog`, // Updated Name
     description: post.content.substring(0, 160).replace(/<[^>]*>?/gm, ''), // Simple excerpt from content
     openGraph: {
       title: post.title,

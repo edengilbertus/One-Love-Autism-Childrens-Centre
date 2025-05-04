@@ -12,7 +12,7 @@ export default function AboutPage() {
 
   return (
     <div className="container py-12 md:py-20 px-4 md:px-6">
-      <h1 className="text-4xl font-bold tracking-tight text-center mb-12">About One Love Autism Children’s Centre</h1>
+      <h1 className="text-4xl font-bold tracking-tight text-center mb-12">About One Love Autism Children's Centre</h1> {/* Updated Name */}
 
       {/* Mission & Vision Section */}
       <section className="mb-16 grid md:grid-cols-2 gap-8 items-center">
@@ -165,7 +165,7 @@ export default function AboutPage() {
               allowFullScreen={false}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="One Love Autism Children's Centre Location"
+              title="One Love Autism Children's Centre Location" // Updated Name
             ></iframe>
           {/* <Map center={oneLoveCentreLocation} zoom={13} /> */}
         </div>

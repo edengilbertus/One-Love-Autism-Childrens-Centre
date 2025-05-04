@@ -41,7 +41,7 @@ export default function GetInvolvedPage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold tracking-tight">Get Involved</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-          Your support makes a world of difference. Discover how you can contribute to the future of children at One Love Autism Children’s Centre.
+          Your support makes a world of difference. Discover how you can contribute to the future of children at One Love Autism Children's Centre. {/* Updated Name */}
         </p>
       </div>
 

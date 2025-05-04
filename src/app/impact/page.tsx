@@ -69,7 +69,7 @@ export default function ImpactPage() {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold tracking-tight">Our Impact</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-          See how the generosity of our community and the dedication of our team are transforming lives at One Love Autism Children’s Centre.
+          See how the generosity of our community and the dedication of our team are transforming lives at One Love Autism Children's Centre. {/* Updated Name */}
         </p>
       </div>
 

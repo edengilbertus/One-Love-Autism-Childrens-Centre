@@ -26,10 +26,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 text-primary font-semibold text-lg" aria-label="One Love Centre Home">
+        <Link href="/" className="flex items-center gap-2 text-primary font-semibold text-lg" aria-label="One Love Autism Children's Centre Home"> {/* Updated aria-label */}
           {/* Using HeartHandshake as a placeholder for the logo */}
           <HeartHandshake className="h-6 w-6" />
-          <span>One Love Centre</span> {/* Updated title */}
+          <span>One Love Autism Children’s Centre</span> {/* Updated title */}
         </Link>
 
         {/* Desktop Navigation */}
@@ -65,7 +65,7 @@ export function Header() {
              <div className="flex justify-between items-center p-4 border-b">
                <Link href="/" className="flex items-center gap-2 text-primary font-semibold text-lg" onClick={() => setIsOpen(false)}>
                  <HeartHandshake className="h-6 w-6" />
-                 <span>One Love Centre</span> {/* Updated title */}
+                 <span>One Love Autism Children’s Centre</span> {/* Updated title */}
                </Link>
                <SheetClose asChild>
                  <Button variant="ghost" size="icon">

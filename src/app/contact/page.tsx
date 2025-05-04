@@ -190,7 +190,7 @@ export default function ContactPage() {
                 <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold">Address</h4>
-                  <p className="text-sm text-muted-foreground">One Love Autism Children’s Centre<br />Kabale District, Uganda</p>
+                  <p className="text-sm text-muted-foreground">One Love Autism Children's Centre<br />Kabale District, Uganda</p> {/* Updated Name */}
                    <a
                       href={`https://www.google.com/maps/search/?api=1&query=${oneLoveCentreLocation.lat},${oneLoveCentreLocation.lng}`}
                       target="_blank"
@@ -257,7 +257,7 @@ export default function ContactPage() {
                       allowFullScreen={false}
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="One Love Autism Children's Centre Location"
+                      title="One Love Autism Children's Centre Location" // Updated Name
                    ></iframe>
                </div>
                 <div className="text-center mt-3">
