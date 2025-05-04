@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Wheelchair, Pill, Droplets, BedDouble } from "lucide-react"; // Using related icons
+import { Accessibility, Pill, Droplets, BedDouble } from "lucide-react"; // Removed Wheelchair, using Accessibility
 
 interface Project {
   id: number;
@@ -25,7 +25,7 @@ const projects: Project[] = [
     imageUrl: "https://picsum.photos/400/300?random=1",
     imageAlt: "Children using new wheelchairs",
     donor: "Isabella & Herman Zauscher",
-    icon: <Wheelchair className="h-6 w-6 text-primary" />,
+    icon: <Accessibility className="h-6 w-6 text-primary" />, // Replaced Wheelchair with Accessibility
     aiHint: "children wheelchairs uganda donation happy",
   },
   {
@@ -80,8 +80,8 @@ export default function ImpactPage() {
               <Image
                 src={project.imageUrl}
                 alt={project.imageAlt}
-                layout="fill"
-                objectFit="cover"
+                fill={true}
+                style={{objectFit: "cover"}}
                 data-ai-hint={project.aiHint}
               />
               {project.icon && (
