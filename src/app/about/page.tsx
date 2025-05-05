@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, Users, History, Target, Eye, LinkIcon, Briefcase, Phone, HeartHandshake, TrendingUp, Building, Heart, ShieldCheck, Leaf } from "lucide-react"; // Added icons for core values
+import { MapPin, Users, History, Target, Eye, LinkIcon, Briefcase, Phone, HeartHandshake, TrendingUp, Building, Heart, ShieldCheck, Leaf, UserCheck, Group } from "lucide-react"; // Added icons for core values, counsellors, committee
 // Map component needs API key setup, using placeholder for now
 // import { Map } from '@/components/map'; // Assume a map component exists
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -217,7 +217,7 @@ export default function AboutPage() {
             </p>
          </div>
          {/* Grid for team members */}
-         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {/* Twinomugisha Mildred Card */}
             <Card className="text-center">
                 <CardHeader>
@@ -230,7 +230,7 @@ export default function AboutPage() {
                      data-ai-hint="person portrait director woman uganda" // Updated AI hint
                    />
                    <CardTitle className="text-xl">Twinomugisha Mildred</CardTitle> {/* Updated name */}
-                   <p className="text-sm text-primary font-medium">Director</p> {/* Updated role */}
+                   <p className="text-sm text-primary font-medium">Director / Treasurer</p> {/* Updated role */}
                 </CardHeader>
                 <CardContent>
                    <p className="text-sm text-muted-foreground mb-3">
@@ -242,8 +242,6 @@ export default function AboutPage() {
                    </div>
                 </CardContent>
             </Card>
-            {/* Example Team Member Card 2 */}
-             
             {/* Eden Gilbert Kiseka Card */}
              <Card className="text-center">
                 <CardHeader>
@@ -283,9 +281,70 @@ export default function AboutPage() {
                    </div>
                 </CardContent>
             </Card>
-            {/* Add more team member cards */}
+            {/* Placeholder for other key staff if needed */}
          </div>
+
+         {/* Committee Members Section */}
+         <div className="mb-12">
+           <div className="text-center mb-8">
+             <Group className="h-10 w-10 text-primary mx-auto mb-2" />
+             <h3 className="text-2xl font-semibold tracking-tight">Committee Members</h3>
+             <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
+               Guiding the strategic direction and governance of the Centre.
+             </p>
+           </div>
+           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 justify-center">
+             <Card className="text-center p-4 bg-secondary/20">
+               <CardTitle className="text-lg">Musiimenta Ritah</CardTitle>
+               <p className="text-sm text-primary font-medium">Chairperson</p>
+             </Card>
+             <Card className="text-center p-4 bg-secondary/20">
+               <CardTitle className="text-lg">Keneema Annet</CardTitle>
+               <p className="text-sm text-primary font-medium">Vice Chairperson</p>
+             </Card>
+             <Card className="text-center p-4 bg-secondary/20">
+               <CardTitle className="text-lg">Nahimbisa Irene</CardTitle>
+               <p className="text-sm text-primary font-medium">Secretary</p>
+             </Card>
+              <Card className="text-center p-4 bg-secondary/20">
+                <CardTitle className="text-lg">Twinomugisha Midred</CardTitle> {/* Moved from above */}
+                <p className="text-sm text-primary font-medium">Director / Treasurer</p>
+             </Card>
+             <Card className="text-center p-4 bg-secondary/20">
+               <CardTitle className="text-lg">Tukamusiima Charity</CardTitle>
+               <p className="text-sm text-primary font-medium">Committee Member</p>
+             </Card>
+             <Card className="text-center p-4 bg-secondary/20">
+               <CardTitle className="text-lg">Kobusingye Margaret</CardTitle>
+               <p className="text-sm text-primary font-medium">Committee Member</p>
+             </Card>
+           </div>
+         </div>
+
+         {/* Counsellors Section */}
+         <div>
+           <div className="text-center mb-8">
+             <UserCheck className="h-10 w-10 text-primary mx-auto mb-2" />
+             <h3 className="text-2xl font-semibold tracking-tight">Our Counsellors</h3>
+             <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
+               Providing expert guidance and support to our children and families.
+             </p>
+           </div>
+           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center max-w-3xl mx-auto">
+             <Card className="text-center p-4">
+               <CardTitle className="text-lg">Bitungwa Johnson</CardTitle>
+               <p className="text-sm text-primary font-medium">Principle Psychiatric Officer</p>
+               <p className="text-xs text-muted-foreground">Kabale Regional Referral Hospital</p>
+             </Card>
+             <Card className="text-center p-4">
+               <CardTitle className="text-lg">Rwakimari Albert</CardTitle>
+               <p className="text-sm text-primary font-medium">Senior Medical Clinical Officer</p>
+             </Card>
+           </div>
+         </div>
+
       </section>
+
 
       {/* Location Map Section */}
       <section>
