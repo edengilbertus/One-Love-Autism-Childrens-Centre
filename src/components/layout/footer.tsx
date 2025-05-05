@@ -26,8 +26,8 @@ export function Footer() {
   return (
     <footer className="bg-muted text-muted-foreground border-t">
       <div className="container py-12 px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Column 1: Logo and About */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10"> {/* Added mb-10 */}
+          {/* Column 1: Logo and About & Developer Ad */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2 text-primary font-semibold text-lg" aria-label="One Love Autism Children’s Centre Home">
               <HeartHandshake className="h-7 w-7" />
@@ -37,6 +37,37 @@ export function Footer() {
               Empowering children with autism and neurodevelopmental disabilities in Kabale District, Uganda through education, therapy, and community support.
             </p>
              <p className="text-xs mt-2">Registered Name: One Love Autism Children’s Centre</p>
+
+             {/* Developer Advertisement Section moved here */}
+             <div className="mt-6 pt-6 border-t border-border/50 space-y-3"> {/* Removed text-center */}
+                 <div className="flex items-center gap-3"> {/* Removed justify-center */}
+                    <Image
+                        src="https://i.imgur.com/hsOF5Uk.jpeg" // Carthigan Electronics logo
+                        alt="Carthigan Electronics Logo"
+                        width={30}
+                        height={30}
+                        className="rounded-full"
+                        data-ai-hint="company logo technology electronics" // Added AI hint
+                    />
+                    <p className="text-sm text-muted-foreground">
+                       Developed by <a href="https://carthiganelectronics.vercel.app/" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-primary transition-colors">Carthigan Electronics</a>
+                    </p>
+                 </div>
+                 <div className="flex space-x-4"> {/* Removed justify-center */}
+                   <a href="https://x.com/carthigan?t=sJDIPFWegJU1Z_HgDdDPng&s=08" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Carthigan Electronics X (Twitter)">
+                     <XIcon />
+                   </a>
+                   <a href="https://www.facebook.com/profile.php?id=61575714520149" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Carthigan Electronics Facebook">
+                     <Facebook className="h-5 w-5" />
+                   </a>
+                   <a href="https://wa.me/256726408312" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Carthigan Electronics WhatsApp">
+                     <WhatsAppIcon />
+                   </a>
+                   <a href="https://www.instagram.com/carthiganelectronics?igsh=MXRuazc3OXdyMmFzNw==" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Carthigan Electronics Instagram">
+                     <Instagram className="h-5 w-5" />
+                   </a>
+                 </div>
+             </div>
           </div>
 
           {/* Column 2: Quick Links */}
@@ -85,40 +116,8 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Developer Advertisement Section */}
-         <div className="mt-10 pt-6 border-t border-border/50 text-center space-y-3">
-             <div className="flex justify-center items-center gap-3">
-                <Image
-                    src="https://i.imgur.com/hsOF5Uk.jpeg" // Carthigan Electronics logo
-                    alt="Carthigan Electronics Logo"
-                    width={30}
-                    height={30}
-                    className="rounded-full"
-                    data-ai-hint="company logo technology electronics" // Added AI hint
-                />
-                <p className="text-sm text-muted-foreground">
-                   This site was developed by <a href="https://carthiganelectronics.vercel.app/" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-primary transition-colors">Carthigan Electronics</a>
-                </p>
-             </div>
-             <div className="flex justify-center space-x-4">
-               <a href="https://x.com/carthigan?t=sJDIPFWegJU1Z_HgDdDPng&s=08" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Carthigan Electronics X (Twitter)">
-                 <XIcon />
-               </a>
-               <a href="https://www.facebook.com/profile.php?id=61575714520149" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Carthigan Electronics Facebook">
-                 <Facebook className="h-5 w-5" />
-               </a>
-               <a href="https://wa.me/256726408312" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Carthigan Electronics WhatsApp">
-                 <WhatsAppIcon />
-               </a>
-               <a href="https://www.instagram.com/carthiganelectronics?igsh=MXRuazc3OXdyMmFzNw==" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Carthigan Electronics Instagram">
-                 <Instagram className="h-5 w-5" />
-               </a>
-             </div>
-         </div>
-
-
         {/* Bottom Bar */}
-        <div className="mt-8 pt-8 border-t border-border/50 text-center text-xs">
+        <div className="pt-8 border-t border-border/50 text-center text-xs">
           <p>&copy; {currentYear} One Love Autism Children’s Centre. All rights reserved.</p>
            {/* Optional: Add link to privacy policy/terms */}
            {/* <p className="mt-1">
@@ -129,4 +128,3 @@ export function Footer() {
     </footer>
   );
 }
-
