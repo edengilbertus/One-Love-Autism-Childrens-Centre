@@ -16,7 +16,7 @@ const geistSans = Geist({
 
 export const metadata: Metadata = {
   // Use the heart/hands logo (or placeholder) for favicon - requires specific setup not included here.
-  // icons: { icon: '/favicon.ico' }, // Example, replace with actual path
+  icons: { icon: '/favicon.ico' }, // Reference the favicon in the public directory
   title: {
     template: '%s | One Love Autism Children\'s Centre', // Updated Name
     default: 'One Love Autism Children\'s Centre - Empowering Every Child', // Updated Name
@@ -71,4 +71,3 @@ export default function RootLayout({
     </html>
   );
 }
-
