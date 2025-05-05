@@ -50,7 +50,7 @@ export function Footer() {
                         data-ai-hint="company logo technology electronics" // Added AI hint
                     />
                     <p className="text-sm text-muted-foreground">
-                       Developed by <a href="https://carthiganelectronics.vercel.app/" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-primary transition-colors">Eden Gilbert Carthigan Electronics</a>
+                       Developed by <a href="https://carthiganelectronics.vercel.app/" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-primary transition-colors">Eden Gilbert, Carthigan Electronics</a>
                     </p>
                  </div>
                  <div className="flex space-x-4"> {/* Removed justify-center */}
