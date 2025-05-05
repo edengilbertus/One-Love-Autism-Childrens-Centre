@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, Users, History, Target, Eye, LinkIcon, Briefcase, Phone } from "lucide-react"; // Added LinkIcon, Briefcase, Phone
+import { MapPin, Users, History, Target, Eye, LinkIcon, Briefcase, Phone, HeartHandshake, TrendingUp, Building, Heart, ShieldCheck, Leaf } from "lucide-react"; // Added icons for core values
 // Map component needs API key setup, using placeholder for now
 // import { Map } from '@/components/map'; // Assume a map component exists
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -64,6 +64,73 @@ export default function AboutPage() {
         </div>
       </section>
 
+       {/* Core Values Section */}
+       <section className="mb-16">
+         <div className="text-center mb-8">
+           <HeartHandshake className="h-10 w-10 text-primary mx-auto mb-2" />
+           <h2 className="text-3xl font-semibold tracking-tight">Our Core Values</h2>
+           <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
+             Guiding principles that shape our work and commitment to the community.
+           </p>
+         </div>
+         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+           <Card>
+             <CardHeader className="flex flex-row items-center gap-3">
+               <HeartHandshake className="h-6 w-6 text-primary flex-shrink-0" />
+               <CardTitle className="text-xl">Inclusivity</CardTitle>
+             </CardHeader>
+             <CardContent>
+               <p className="text-sm text-muted-foreground">We believe every child deserves access to care, education, and opportunities, no matter their abilities or background.</p>
+             </CardContent>
+           </Card>
+           <Card>
+             <CardHeader className="flex flex-row items-center gap-3">
+               <TrendingUp className="h-6 w-6 text-primary flex-shrink-0" />
+               <CardTitle className="text-xl">Empowerment</CardTitle>
+             </CardHeader>
+             <CardContent>
+               <p className="text-sm text-muted-foreground">We support families with knowledge, skills, and resources to care for and advocate for their children.</p>
+             </CardContent>
+           </Card>
+           <Card>
+             <CardHeader className="flex flex-row items-center gap-3">
+               <Building className="h-6 w-6 text-primary flex-shrink-0" />
+               <CardTitle className="text-xl">Community</CardTitle>
+             </CardHeader>
+             <CardContent>
+               <p className="text-sm text-muted-foreground">We foster solidarity among families and collaborate with the wider community to reduce stigma and build understanding.</p>
+             </CardContent>
+           </Card>
+           <Card>
+             <CardHeader className="flex flex-row items-center gap-3">
+               <Heart className="h-6 w-6 text-primary flex-shrink-0" />
+               <CardTitle className="text-xl">Compassion</CardTitle>
+             </CardHeader>
+             <CardContent>
+               <p className="text-sm text-muted-foreground">We serve with love, patience, and respect, recognizing the unique journeys of each child and family.</p>
+             </CardContent>
+           </Card>
+           <Card>
+             <CardHeader className="flex flex-row items-center gap-3">
+               <ShieldCheck className="h-6 w-6 text-primary flex-shrink-0" />
+               <CardTitle className="text-xl">Integrity</CardTitle>
+             </CardHeader>
+             <CardContent>
+               <p className="text-sm text-muted-foreground">We are committed to transparency, accountability, and ethical practices in everything we do.</p>
+             </CardContent>
+           </Card>
+           <Card>
+             <CardHeader className="flex flex-row items-center gap-3">
+               <Leaf className="h-6 w-6 text-primary flex-shrink-0" />
+               <CardTitle className="text-xl">Sustainability</CardTitle>
+             </CardHeader>
+             <CardContent>
+               <p className="text-sm text-muted-foreground">We strive for long-term solutions that uplift families and create lasting change.</p>
+             </CardContent>
+           </Card>
+         </div>
+       </section>
+
       {/* History Section */}
       <section className="mb-16">
         <Card>
@@ -73,12 +140,12 @@ export default function AboutPage() {
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground">
             <p>
-              One Love Autism Children’s Centre Kabale was founded with a deep passion for supporting children often overlooked by society.
+              One Love Autism Children’s Centre Kabale was founded in 2019 with a deep passion for supporting children often overlooked by society.
             </p>
             <p>
               Witnessing the lack of specialized resources for children with autism and neurodevelopmental disabilities in the region, we established the centre to provide a safe, nurturing, and stimulating environment.
             </p>
-             <p>
+             <p className="font-semibold text-foreground mt-4">
              Jeremiah’s Journey: The Inspiration
            </p>
             <p>
@@ -87,7 +154,7 @@ export default function AboutPage() {
            <p>
             At the age of three, further medical evaluations confirmed that Jeremiah was autistic. This diagnosis was unfamiliar to the family and community, where awareness about autism was minimal, and stigma was high. Finding appropriate care and education became an uphill battle. The family faced rejection from local schools and grappled with the high costs of specialized education and therapy. Despite these challenges, Jeremiah's parents remained determined to give him the best possible chance at a fulfilling life.
            </p>
-           <p>
+           <p className="font-semibold text-foreground mt-4">
             The Birth of a Vision
            </p>
            <p>
@@ -96,7 +163,7 @@ export default function AboutPage() {
            <p>
             Motivated by their experiences, Jeremiah’s mother wrote a proposal to establish a dedicated centre where children like her son could access therapy, skills training, education, and social support. The idea was to create a safe, inclusive space that would not only help children develop but also provide relief and empowerment to their caregivers through counselling and community awareness.
            </p>
-           <p>
+           <p className="font-semibold text-foreground mt-4">
             Forming a Community
            </p>
            <p>
@@ -105,7 +172,7 @@ export default function AboutPage() {
            <p>
             The One Love Autism Children’s Centre was thus conceived, not as a dream fulfilled, but as a mission in progress. The centre is not yet built, but with proposals written and partnerships sought, its founders are actively seeking support from donors and well-wishers to turn this dream into reality.
            </p>
-           <p>
+           <p className="font-semibold text-foreground mt-4">
             Looking Ahead
            </p>
            <p>
@@ -114,9 +181,10 @@ export default function AboutPage() {
            <p>
             The journey of Jeremiah—and the resolve of his family—continues to inspire this initiative, with the hope that many more children will benefit from the support that Jeremiah once struggled to find.
            </p>
-           <p>
-            To support the building of One Love Autism Children’s Centre or to learn more about our mission, please get in touch.Founder’s Story: The Birth of One Love Autism Children’s Centre
+           <p className="mt-6 border-t pt-4 italic">
+            To support the building of One Love Autism Children’s Centre or to learn more about our mission, please get in touch.
            </p>
+           <p className="font-semibold text-foreground mt-4">Founder’s Story: The Birth of One Love Autism Children’s Centre</p>
            <p>
             My name is Twinomugisha Mildred, and my journey toward founding One Love Autism Children’s Centre began with my son, Jeremiah. Born on February 16, 2010, Jeremiah faced significant health challenges from the very start. Although my pregnancy was normal, after birth he struggled with severe medical complications. He was diagnosed with congenital heart disease and required urgent treatment, including surgery overseas. Thanks to the generosity of kind-hearted people from around the world, we were able to raise funds for his operation in Italy. Despite his critical condition, Jeremiah survived — though his recovery was long and difficult.
            </p>
@@ -242,7 +310,7 @@ export default function AboutPage() {
         </div>
          <div className="text-center mt-4">
           <a
-             href={`https://www.google.com/maps/search/?api=1&query=${oneLoveCentreLocation.lat},${oneLoveCentreLocation.lng}`}
+             href={`https://maps.app.goo.gl/vDXwtUTueg9Hx1RK9`} // Updated Google Maps link
              target="_blank"
              rel="noopener noreferrer"
              className="text-primary hover:underline text-sm font-medium"
@@ -257,3 +325,5 @@ export default function AboutPage() {
     </div>
   );
 }
+
+    
