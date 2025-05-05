@@ -51,6 +51,9 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
+
+
+
   children: React.ReactNode;
 }>) {
   return (
@@ -67,6 +70,7 @@ export default function RootLayout({
           <Footer />
           <Toaster /> {/* Add Toaster component here */}
          </ThemeProvider>
+
       </body>
     </html>
   );
