@@ -8,57 +8,47 @@ body {
 
 @layer base {
   :root {
-    /* Dark Blue Theme */
-    --background: 220 25% 15%; /* Dark Slate Blue */
-    --foreground: 220 15% 95%; /* Very Light Grayish Blue */
+    /* Light Theme - Added */
+    --background: 0 0% 100%; /* White */
+    --foreground: 220 15% 15%; /* Dark Blue-Gray */
 
-    --card: 220 25% 18%; /* Slightly Lighter Dark Slate Blue */
-    --card-foreground: 220 15% 95%; /* Match foreground */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 220 15% 15%; /* Match foreground */
 
-    --popover: 220 25% 12%; /* Even Darker Slate Blue */
-    --popover-foreground: 220 15% 95%; /* Match foreground */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 220 15% 15%; /* Match foreground */
 
-    --primary: 160 70% 50%; /* Teal accent (slightly brighter) */
-    --primary-foreground: 220 20% 10%; /* Very Dark Blue for contrast */
+    --primary: 160 70% 40%; /* Teal (slightly darker for light bg contrast) */
+    --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 220 20% 25%; /* Medium Dark Slate Blue */
-    --secondary-foreground: 220 10% 85%; /* Light Grayish Blue */
+    --secondary: 220 10% 95%; /* Very Light Grayish Blue */
+    --secondary-foreground: 220 15% 25%; /* Medium Dark Blue-Gray */
 
-    --muted: 220 20% 20%; /* Darker Muted Slate Blue */
-    --muted-foreground: 220 10% 65%; /* Medium Grayish Blue */
+    --muted: 220 10% 90%; /* Light Grayish Blue */
+    --muted-foreground: 220 10% 45%; /* Medium Grayish Blue */
 
-    --accent: 40 60% 50%; /* Gold/Orange accent */
-    --accent-foreground: 40 60% 95%; /* Very Light Gold/Orange for accent text */
+    --accent: 40 60% 55%; /* Gold/Orange accent (slightly adjusted) */
+    --accent-foreground: 40 90% 10%; /* Dark brown/gold for accent text */
 
-    --destructive: 0 60% 55%; /* Soft red */
+    --destructive: 0 70% 50%; /* Brighter red for light bg */
     --destructive-foreground: 0 0% 100%; /* White */
 
-    --border: 220 20% 30%; /* Subtle Dark Blue Border */
-    --input: 220 20% 30%; /* Subtle Dark Blue Input Border */
-    --ring: 160 70% 50%; /* Teal accent for rings */
+    --border: 220 15% 85%; /* Light Gray Border */
+    --input: 220 15% 85%; /* Light Gray Input Border */
+    --ring: 160 70% 40%; /* Teal accent for rings */
 
     --radius: 0.5rem;
 
-    /* Chart colors adjusted for dark background */
-    --chart-1: 160 60% 50%; /* Teal variant */
-    --chart-2: 40 60% 60%;  /* Orange variant */
-    --chart-3: 140 40% 50%; /* Soft green */
-    --chart-4: 200 50% 60%; /* Soft blue */
-    --chart-5: 50 50% 70%;  /* Soft yellow */
-
-    /* Sidebar specific colors (adjusted for dark blue theme) */
-    --sidebar-background: 220 25% 12%; /* Darker blue for sidebar */
-    --sidebar-foreground: 220 15% 90%;
-    --sidebar-primary: 160 70% 55%; /* Brighter Teal for sidebar */
-    --sidebar-primary-foreground: 220 20% 5%;
-    --sidebar-accent: 40 60% 45%; /* Darker Gold/Orange for sidebar accent */
-    --sidebar-accent-foreground: 40 60% 90%;
-    --sidebar-border: 220 20% 25%;
-    --sidebar-ring: 160 70% 55%;
+    /* Chart colors adjusted for light background */
+    --chart-1: 160 70% 45%; /* Teal variant */
+    --chart-2: 40 60% 50%;  /* Orange variant */
+    --chart-3: 140 40% 45%; /* Soft green */
+    --chart-4: 200 50% 50%; /* Soft blue */
+    --chart-5: 50 50% 55%;  /* Soft yellow */
   }
 
   .dark {
-    /* Define an even darker blue variation for dark mode */
+    /* Dark Blue Theme */
     --background: 220 30% 10%; /* Very Dark Blue */
     --foreground: 220 15% 90%; /* Light Grayish Blue */
 
@@ -93,16 +83,6 @@ body {
     --chart-3: 140 40% 55%;
     --chart-4: 200 60% 55%;
     --chart-5: 50 50% 65%;
-
-    /* Dark Sidebar colors */
-    --sidebar-background: 220 30% 8%;
-    --sidebar-foreground: 220 15% 85%;
-    --sidebar-primary: 160 75% 60%;
-    --sidebar-primary-foreground: 220 25% 3%;
-    --sidebar-accent: 40 60% 35%;
-    --sidebar-accent-foreground: 40 60% 85%;
-    --sidebar-border: 220 25% 20%;
-    --sidebar-ring: 160 75% 60%;
   }
 }
 
