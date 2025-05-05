@@ -8,11 +8,11 @@ body {
 
 @layer base {
   :root {
-    /* Warm, soft palette with teal accent, adjusted to feel less white */
+    /* Warm, soft palette with teal accent, inspired by hero image */
     --background: 30 30% 97%; /* Light warm gray/beige */
     --foreground: 220 15% 25%; /* Darker grayish blue */
 
-    --card: 0 0% 100%; /* Keep cards white for contrast, or use background: 30 30% 97% */
+    --card: 0 0% 100%; /* Keep cards white for contrast */
     --card-foreground: 220 15% 25%; /* Match foreground */
 
     --popover: 0 0% 100%; /* White popovers */
@@ -39,70 +39,50 @@ body {
 
     --radius: 0.5rem;
 
-    /* Chart colors - adjust if needed to fit new theme */
+    /* Chart colors - adjust if needed */
     --chart-1: 160 60% 40%; /* Teal variant */
     --chart-2: 40 60% 60%;  /* Orange variant */
     --chart-3: 140 30% 60%; /* Soft green */
     --chart-4: 200 50% 60%; /* Soft blue */
     --chart-5: 50 50% 70%;  /* Soft yellow */
-
-    /* Sidebar specific colors (adjust to match new theme) */
-    --sidebar-background: 30 20% 95%; /* Slightly darker warm gray */
-    --sidebar-foreground: 220 15% 20%;
-    --sidebar-primary: 160 80% 40%; /* Teal */
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 40 70% 88%; /* Lighter pale yellow/orange */
-    --sidebar-accent-foreground: 30 50% 15%;
-    --sidebar-border: 30 20% 85%;
-    --sidebar-ring: 160 80% 40%;
   }
 
   .dark {
-    /* Define dark mode colors - adjusted slightly */
-    --background: 220 10% 10%; /* Dark blue-gray */
-    --foreground: 30 30% 90%; /* Lighter warm gray/beige */
+    /* Dark Blue Theme */
+    --background: 220 30% 12%; /* Dark blue-gray */
+    --foreground: 210 40% 98%; /* Very light gray */
 
-    --card: 220 10% 12%; /* Slightly lighter dark */
-    --card-foreground: 30 30% 90%;
+    --card: 220 25% 18%; /* Slightly lighter dark blue-gray */
+    --card-foreground: 210 40% 95%; /* Light gray */
 
-    --popover: 220 10% 10%;
-    --popover-foreground: 30 30% 90%;
+    --popover: 220 30% 10%; /* Very dark blue-gray */
+    --popover-foreground: 210 40% 98%; /* Very light gray */
 
-    --primary: 160 60% 50%; /* Brighter Teal */
-    --primary-foreground: 220 20% 10%; /* Dark blue-gray */
+    --primary: 170 80% 50%; /* Brighter Teal/Cyan */
+    --primary-foreground: 220 20% 10%; /* Dark text on primary */
 
-    --secondary: 220 10% 20%; /* Darker subtle blue */
-    --secondary-foreground: 30 40% 80%; /* Lighter warm gray */
+    --secondary: 220 20% 25%; /* Medium dark blue-gray */
+    --secondary-foreground: 210 30% 85%; /* Slightly muted light gray */
 
-    --muted: 220 10% 15%; /* Darker muted blue-gray */
-    --muted-foreground: 30 20% 60%; /* Medium warm gray */
+    --muted: 220 20% 20%; /* Darker muted blue-gray */
+    --muted-foreground: 210 20% 65%; /* Medium-dark gray */
 
-    --accent: 40 50% 30%; /* Darker pale yellow/orange */
-    --accent-foreground: 40 50% 95%; /* Very light yellow/orange */
+    --accent: 170 70% 40%; /* Teal/Cyan accent */
+    --accent-foreground: 0 0% 100%; /* White text on accent */
 
-    --destructive: 0 60% 50%; /* Darker soft red */
+    --destructive: 0 60% 50%; /* Keep soft red for destructive */
     --destructive-foreground: 0 0% 100%; /* White */
 
-    --border: 220 10% 30%; /* Dark blue-gray */
-    --input: 220 10% 30%;
-    --ring: 160 60% 50%; /* Brighter Teal */
+    --border: 220 20% 30%; /* Dark blue-gray border */
+    --input: 220 20% 30%; /* Dark blue-gray input border */
+    --ring: 170 70% 55%; /* Brighter Teal/Cyan for rings */
 
     /* Adjust chart colors for dark mode */
-    --chart-1: 160 60% 50%;
-    --chart-2: 40 60% 60%;
-    --chart-3: 140 30% 50%;
-    --chart-4: 200 60% 50%;
-    --chart-5: 50 50% 60%;
-
-    /* Dark Sidebar colors */
-    --sidebar-background: 220 10% 8%;
-    --sidebar-foreground: 30 30% 85%;
-    --sidebar-primary: 160 60% 50%;
-    --sidebar-primary-foreground: 220 20% 10%;
-    --sidebar-accent: 40 50% 25%;
-    --sidebar-accent-foreground: 40 50% 90%;
-    --sidebar-border: 220 10% 25%;
-    --sidebar-ring: 160 60% 50%;
+    --chart-1: 170 60% 50%; /* Teal/Cyan */
+    --chart-2: 40 60% 60%;  /* Keep Orange-ish */
+    --chart-3: 140 30% 50%; /* Darker Soft green */
+    --chart-4: 210 60% 50%; /* Blue */
+    --chart-5: 50 50% 60%;  /* Darker Soft yellow */
   }
 }
 
@@ -115,17 +95,3 @@ body {
     font-feature-settings: "rlig" 1, "calt" 1; /* Enable common ligatures */
   }
 }
-
-/* Add high-contrast styles if needed */
-/* @media (prefers-contrast: high) { */
-/*   :root { */
-/*     --foreground: 0 0% 0%; */
-/*     --background: 0 0% 100%; */
-    /* ... adjust other colors for high contrast ... */
-/*   } */
-/*   .dark { */
-/*     --foreground: 0 0% 100%; */
-/*     --background: 0 0% 0%; */
-    /* ... adjust other dark colors for high contrast ... */
-/*   } */
-/* } */

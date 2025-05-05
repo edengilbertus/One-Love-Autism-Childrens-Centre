@@ -5,6 +5,7 @@ import './globals.css';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Toaster } from "@/components/ui/toaster"; // Import Toaster
+import { ThemeProvider } from "@/components/theme-provider"; // Import ThemeProvider
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -53,12 +54,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={geistSans.variable}>
+    <html lang="en" className={geistSans.variable} suppressHydrationWarning> {/* Add suppressHydrationWarning */}
       <body className="flex min-h-screen flex-col antialiased">
-        <Header />
-        <main className="flex-grow">{children}</main>
-        <Footer />
-        <Toaster /> {/* Add Toaster component here */}
+         <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+          <Header />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+          <Toaster /> {/* Add Toaster component here */}
+         </ThemeProvider>
       </body>
     </html>
   );
