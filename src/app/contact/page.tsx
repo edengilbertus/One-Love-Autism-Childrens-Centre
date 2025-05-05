@@ -1,5 +1,4 @@
-
-"use client"; // Required for form handling
+"use client"; // Required for form handling and environment variable access
 
 import * as React from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -82,6 +81,7 @@ export default function ContactPage() {
 
    // Updated location for One Love Centre
    const oneLoveCentreLocation = { lat: -1.249803, lng: 29.986100 }; // Approximate coordinates from Google Maps link
+   const googleMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY; // Read API key from environment variable
 
   return (
     <div className="container py-12 md:py-20 px-4 md:px-6">
@@ -246,16 +246,24 @@ export default function ContactPage() {
              <CardContent>
                {/* Embedded Google Map using iframe */}
                <div className="aspect-square w-full bg-muted rounded-lg shadow-inner overflow-hidden">
-                   <iframe
-                      src={`https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=${oneLoveCentreLocation.lat},${oneLoveCentreLocation.lng}`} // Replace YOUR_GOOGLE_MAPS_API_KEY
-                      width="100%"
-                      height="100%"
-                      style={{ border: 0 }}
-                      allowFullScreen={false}
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                      title="One Love Autism Children's Centre Location" // Updated Name
-                   ></iframe>
+                  {googleMapsApiKey ? (
+                    <iframe
+                        src={`https://www.google.com/maps/embed/v1/place?key=${googleMapsApiKey}&q=${oneLoveCentreLocation.lat},${oneLoveCentreLocation.lng}`}
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        allowFullScreen={false}
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="One Love Autism Children's Centre Location" // Updated Name
+                    ></iframe>
+                  ) : (
+                    <div className="text-center p-4 h-full flex flex-col justify-center items-center">
+                      <p>Map cannot be displayed.</p>
+                      <p className="text-xs mt-1">Google Maps API key is missing or invalid.</p>
+                      <p className="text-xs mt-2">Please set the <code className="bg-muted px-1 rounded">NEXT_PUBLIC_GOOGLE_MAPS_API_KEY</code> environment variable.</p>
+                    </div>
+                  )}
                </div>
                 <div className="text-center mt-3">
                    {/* Link to Google Maps */}
@@ -268,9 +276,11 @@ export default function ContactPage() {
                       View on Google Maps
                    </a>
                 </div>
-                <div className="mt-4 p-3 bg-muted/50 border border-border rounded-md text-muted-foreground text-xs text-center"> {/* Use theme variables */}
-                   <strong>Developer Note:</strong> Map embed requires a Google Maps API key. Replace `YOUR_GOOGLE_MAPS_API_KEY` in the `iframe src`.
-                </div>
+                {!googleMapsApiKey && (
+                  <div className="mt-4 p-3 bg-yellow-100 border border-yellow-300 rounded-md text-yellow-800 text-xs text-center"> {/* Use theme variables */}
+                     <strong>Developer Note:</strong> Map embed requires a Google Maps API key. Set the `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` environment variable. See `.env.example` for guidance.
+                  </div>
+                 )}
              </CardContent>
           </Card>
         </div>
@@ -283,4 +293,3 @@ export default function ContactPage() {
     </div>
   );
 }
-

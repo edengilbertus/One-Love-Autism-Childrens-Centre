@@ -1,3 +1,4 @@
+"use client"; // Required for reading environment variables on the client
 
 import Image from "next/image";
 import Link from "next/link";
@@ -6,6 +7,7 @@ import { MapPin, Users, History, Target, Eye, LinkIcon, Briefcase, Phone, HeartH
 // Map component needs API key setup, using placeholder for now
 // import { Map } from '@/components/map'; // Assume a map component exists
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+import React from "react"; // Import React
 
 // Inline SVG for Instagram Icon (if not using lucide-react)
 const InstagramIcon = () => (
@@ -20,6 +22,7 @@ const InstagramIcon = () => (
 export default function AboutPage() {
   // Placeholder location for Kabale - Use the specific one from contact page
    const oneLoveCentreLocation = { lat: -1.249803, lng: 29.986100 };
+   const googleMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY; // Read API key from environment variable
 
   return (
     <div className="container py-12 md:py-20 px-4 md:px-6">
@@ -354,17 +357,24 @@ export default function AboutPage() {
          </div>
         {/* Map Placeholder - Requires integration with a map library and API key */}
         <div className="aspect-video w-full bg-muted rounded-lg shadow-md flex items-center justify-center text-muted-foreground overflow-hidden">
-            {/* Embedded Google Map using iframe */}
-            <iframe
-              src={`https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=${oneLoveCentreLocation.lat},${oneLoveCentreLocation.lng}`} // Replace YOUR_GOOGLE_MAPS_API_KEY
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen={false}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="One Love Autism Children's Centre Location"
-            ></iframe>
+            {googleMapsApiKey ? (
+                <iframe
+                src={`https://www.google.com/maps/embed/v1/place?key=${googleMapsApiKey}&q=${oneLoveCentreLocation.lat},${oneLoveCentreLocation.lng}`}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="One Love Autism Children's Centre Location"
+                ></iframe>
+            ) : (
+                <div className="text-center p-4">
+                <p>Map cannot be displayed.</p>
+                <p className="text-xs">Google Maps API key is missing or invalid.</p>
+                <p className="text-xs mt-2">Please set the <code className="bg-muted px-1 rounded">NEXT_PUBLIC_GOOGLE_MAPS_API_KEY</code> environment variable.</p>
+                </div>
+            )}
         </div>
          <div className="text-center mt-4">
           <a
@@ -376,11 +386,12 @@ export default function AboutPage() {
              View on Google Maps
           </a>
         </div>
-         <div className="mt-4 p-3 bg-yellow-100 border border-yellow-300 rounded-md text-yellow-800 text-xs text-center max-w-md mx-auto">
-            <strong>Developer Note:</strong> Map embed requires a Google Maps API key. Replace `YOUR_GOOGLE_MAPS_API_KEY` in the `iframe src`.
-         </div>
+         {!googleMapsApiKey && (
+            <div className="mt-4 p-3 bg-yellow-100 border border-yellow-300 rounded-md text-yellow-800 text-xs text-center max-w-md mx-auto">
+                <strong>Developer Note:</strong> Map embed requires a Google Maps API key. Set the `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` environment variable. See `.env.example` for guidance.
+            </div>
+         )}
       </section>
     </div>
   );
 }
-
