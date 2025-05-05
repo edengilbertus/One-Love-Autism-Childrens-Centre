@@ -1,4 +1,5 @@
 
+
 "use client"; // Required for form handling
 
 import * as React from "react";
@@ -192,7 +193,7 @@ export default function ContactPage() {
                   <h4 className="font-semibold">Address</h4>
                   <p className="text-sm text-muted-foreground">One Love Autism Children's Centre<br />Kabale District, Uganda</p> {/* Updated Name */}
                    <a
-                      href={`https://www.google.com/maps/search/?api=1&query=${oneLoveCentreLocation.lat},${oneLoveCentreLocation.lng}`}
+                      href={`https://maps.app.goo.gl/vDXwtUTueg9Hx1RK9`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-xs text-primary hover:underline font-medium mt-1 block"
@@ -203,11 +204,8 @@ export default function ContactPage() {
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-semibold">Phone</h4>
-                  {/* Updated phone number */}
-                  <a href="tel:+256782860084" className="text-sm text-muted-foreground hover:text-primary transition-colors">+256 782 860084</a>
-                </div>
+                {/* Updated phone number */}
+                <a href="tel:+256782860084" className="text-sm text-muted-foreground hover:text-primary transition-colors">+256 782 860084</a>
               </div>
               <div className="flex items-start gap-3">
                  <WhatsAppIcon />

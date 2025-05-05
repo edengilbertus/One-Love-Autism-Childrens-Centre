@@ -1,4 +1,5 @@
 
+
 "use client"; // Required for specific hooks/interactions if added later
 
 import * as React from "react";
@@ -155,22 +156,16 @@ export default function GetInvolvedPage() {
               <p className="text-muted-foreground mb-4">
                  Regular giving provides stable funding for daily operations and our school building fund. Please contact us via phone or WhatsApp to discuss setting up a recurring Mobile Money donation.
               </p>
-               <Image
-                  src="https://picsum.photos/400/200?random=7"
-                  alt="Happy child receiving consistent support"
-                  width={400}
-                  height={200}
-                  className="rounded-md object-cover w-full"
-                  data-ai-hint="child happy learning uganda sustainable school fund"
-                />
+               
             </CardContent>
           </Card>
 
         </div>
 
       </div>
+       <div className="text-center mt-4">
+                The numbers for contact are +256782860084 this is her number Twinomugisha Mildred. The Director
+            </div>
     </div>
   );
 }
-
-    

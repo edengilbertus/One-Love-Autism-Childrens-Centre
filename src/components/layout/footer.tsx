@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import { HeartHandshake, Mail, Phone, MapPin, Facebook, Instagram, Youtube } from "lucide-react"; // Removed Linkedin, Twitter
 
@@ -19,7 +20,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Column 1: Logo and About */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2 text-primary font-semibold text-lg" aria-label="One Love Autism Children’s Centre Home">
+            <Link href="/" className="flex items-center gap-2 text-primary font-semibold text-lg" aria-label="One Love Autism Children’s Centre Home"> {/* Updated Name */}
               <HeartHandshake className="h-7 w-7" />
               <span>One Love Autism Children’s Centre</span> {/* Updated Name */}
             </Link>

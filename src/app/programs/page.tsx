@@ -1,4 +1,5 @@
 
+
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { GraduationCap, Stethoscope, Users, Wrench } from "lucide-react"; // Icons representing program areas

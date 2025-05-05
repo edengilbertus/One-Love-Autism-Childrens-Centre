@@ -73,13 +73,68 @@ export default function AboutPage() {
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground">
             <p>
-              One Love Autism Children’s Centre Kabale was founded in 2019 with a deep passion for supporting children often overlooked by society. Witnessing the lack of specialized resources for children with autism and neurodevelopmental disabilities in the region, we established the centre to provide a safe, nurturing, and stimulating environment.
+              One Love Autism Children’s Centre Kabale was founded with a deep passion for supporting children often overlooked by society.
             </p>
             <p>
-              Starting with just a handful of children, the centre has grown thanks to the dedication of our team, the resilience of our families, and the generosity of supporters like you. We continuously strive to expand our programs and reach, adapting to the evolving needs of our community.
+              Witnessing the lack of specialized resources for children with autism and neurodevelopmental disabilities in the region, we established the centre to provide a safe, nurturing, and stimulating environment.
             </p>
-             {/* Optional: Add a key milestone */}
-             {/* <p>In [Year], we achieved [Significant Milestone], further solidifying our commitment...</p> */}
+             <p>
+             Jeremiah’s Journey: The Inspiration
+           </p>
+            <p>
+            Jeremiah was born on February 16, 2010. His early days were filled with medical challenges. Just after birth, he developed severe complications, including pneumonia and was later diagnosed with congenital heart disease. At only six months old, Jeremiah underwent life-saving heart surgery in Italy, a procedure that was made possible through the support of kind-hearted individuals and organizations. Despite the successful surgery, his developmental journey was marked by delays—he struggled with seizures, poor sleep, and missed many early milestones like sitting, crawling, walking, and talking.
+           </p>
+           <p>
+            At the age of three, further medical evaluations confirmed that Jeremiah was autistic. This diagnosis was unfamiliar to the family and community, where awareness about autism was minimal, and stigma was high. Finding appropriate care and education became an uphill battle. The family faced rejection from local schools and grappled with the high costs of specialized education and therapy. Despite these challenges, Jeremiah's parents remained determined to give him the best possible chance at a fulfilling life.
+           </p>
+           <p>
+            The Birth of a Vision
+           </p>
+           <p>
+            Through their journey with Jeremiah, his family saw firsthand the urgent need for specialized support for children with autism and other developmental conditions in Western Uganda. They encountered many other parents facing similar struggles—parents who, due to poverty, stigma, and lack of services, were forced to hide their children or deny them the care they needed.
+           </p>
+           <p>
+            Motivated by their experiences, Jeremiah’s mother wrote a proposal to establish a dedicated centre where children like her son could access therapy, skills training, education, and social support. The idea was to create a safe, inclusive space that would not only help children develop but also provide relief and empowerment to their caregivers through counselling and community awareness.
+           </p>
+           <p>
+            Forming a Community
+           </p>
+           <p>
+            In the early days, a small group of seven mothers came together to form the Special Mothers Group. They meet monthly to share their stories, learn about autism, and support each other emotionally and financially. Though the group faced setbacks—including financial constraints and the challenges brought by the COVID-19 pandemic—they remained committed to their vision.
+           </p>
+           <p>
+            The One Love Autism Children’s Centre was thus conceived, not as a dream fulfilled, but as a mission in progress. The centre is not yet built, but with proposals written and partnerships sought, its founders are actively seeking support from donors and well-wishers to turn this dream into reality.
+           </p>
+           <p>
+            Looking Ahead
+           </p>
+           <p>
+            The One Love Autism Children’s Centre aims to serve as a beacon of hope for families across Western Uganda. It will provide therapeutic services, educational opportunities, and a platform for advocacy to reduce stigma and improve community inclusion for children with autism and other neurodevelopmental conditions.
+           </p>
+           <p>
+            The journey of Jeremiah—and the resolve of his family—continues to inspire this initiative, with the hope that many more children will benefit from the support that Jeremiah once struggled to find.
+           </p>
+           <p>
+            To support the building of One Love Autism Children’s Centre or to learn more about our mission, please get in touch.Founder’s Story: The Birth of One Love Autism Children’s Centre
+           </p>
+           <p>
+            My name is Twinomugisha Mildred, and my journey toward founding One Love Autism Children’s Centre began with my son, Jeremiah. Born on February 16, 2010, Jeremiah faced significant health challenges from the very start. Although my pregnancy was normal, after birth he struggled with severe medical complications. He was diagnosed with congenital heart disease and required urgent treatment, including surgery overseas. Thanks to the generosity of kind-hearted people from around the world, we were able to raise funds for his operation in Italy. Despite his critical condition, Jeremiah survived — though his recovery was long and difficult.
+           </p>
+           <p>
+            At around three years old, Jeremiah began experiencing seizures and developmental delays. After many hospital visits and consultations, doctors confirmed he had autism — a term that was unfamiliar to our family at the time. His development was slower than other children: walking, talking, and even sitting came much later. Attempts to enroll him in local schools were unsuccessful, as they could not accommodate his special needs. We eventually found a specialized school that helped with his behavior and daily routines, but the costs were overwhelming, and his health remained fragile.
+           </p>
+           <p>
+            Caring for Jeremiah was both a blessing and a struggle. I witnessed firsthand the stigma, discrimination, and isolation faced by families raising children with autism and other developmental conditions in Western Uganda. Many parents remain in denial or hide their children due to fear of judgment or cultural misconceptions. This deeply painful reality inspired me to think bigger: I wanted to create a place where children like Jeremiah could receive the care, education, and therapies they need, and where parents could find support and hope.
+           </p>
+           <p>
+            In the midst of these challenges, I wrote a proposal to establish a dedicated centre for children with autism and related conditions. Supported by friends in Europe and local mothers who shared similar struggles, we formed a group initially called the Special Mothers Group. We met monthly to share experiences, learn about autism, and contribute small savings. Over time, our vision grew into what is now called One Love Autism Children’s Centre.
+           </p>
+           <p>
+            Our dream is to construct a centre in Kabale District — a safe, inclusive space that will offer therapy, skills training, education, and counseling for children and their families. While we have written proposals and continue to seek donations to turn this dream into reality, our commitment remains firm. One Love Autism Children’s Centre stands as a beacon of hope and advocacy, driven by lived experience and fueled by the belief that every child deserves love, dignity, and the chance to thrive.
+           </p>
+           <p>
+            We are calling on partners, donors, and compassionate individuals to join us in making this vision a reality. With your support, we can build the centre and transform the lives of many more children like Jeremiah
+           </p>
           </CardContent>
         </Card>
       </section>
@@ -120,25 +175,7 @@ export default function AboutPage() {
                 </CardContent>
             </Card>
             {/* Example Team Member Card 2 */}
-             <Card className="text-center">
-                <CardHeader>
-                   <Image
-                     src="https://picsum.photos/200/200?grayscale"
-                     alt="Team Member Name"
-                     width={120}
-                     height={120}
-                     className="rounded-full mx-auto mb-4 border-4 border-primary/50"
-                     data-ai-hint="person portrait teacher therapist"
-                   />
-                   <CardTitle className="text-xl">[Team Member Name]</CardTitle>
-                   <p className="text-sm text-primary font-medium">[Role, e.g., Lead Therapist]</p>
-                </CardHeader>
-                <CardContent>
-                   <p className="text-sm text-muted-foreground">
-                     [Brief bio about the team member.]
-                   </p>
-                </CardContent>
-            </Card>
+             
             {/* Eden Gilbert Kiseka Card */}
              <Card className="text-center">
                 <CardHeader>

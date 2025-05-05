@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import { Geist } from 'next/font/google'; // Using Geist Sans as the primary font
 import './globals.css';
@@ -62,3 +63,4 @@ export default function RootLayout({
     </html>
   );
 }
+

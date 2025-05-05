@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -64,7 +65,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  In March 2023, three of our beautiful children — Natukunda Anisha, Abaasa Divine, and Amutuheire Aullelia — received new wheelchairs through the generous support of our friends Isabella and Herman Zauscher from Austria. Before, they faced daily challenges moving around, attending school, playing with other children, and even participating in family activities. Transport was difficult, and they often missed out on moments that every child deserves.
+                 In March 2023, three of our beautiful children — Natukunda Anisha, Abaasa Divine, and Amutuheire Aullelia — received new wheelchairs through the generous support of our friends Isabella and Herman Zauscher from Austria. Before, they faced daily challenges moving around, attending school, playing with other children, and even participating in family activities. Transport was difficult, and they often missed out on moments that every child deserves.
                 </p>
               </CardContent>
               <CardFooter className="flex justify-between items-center">
