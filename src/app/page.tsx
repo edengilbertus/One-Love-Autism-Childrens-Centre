@@ -12,11 +12,11 @@ export default function Home() {
       <section className="relative h-[70vh] min-h-[400px] flex items-center justify-center text-center bg-gradient-to-b from-accent/30 to-background">
         {/* Background Image/Video Placeholder */}
         <Image
-          src="https://picsum.photos/1600/900"
+          src="https://i.imgur.com/qvxKNKm.jpeg"
           alt="Children at One Love Centre"
           layout="fill"
           objectFit="cover"
-          className="absolute inset-0 z-0 opacity-30"
+          className="absolute inset-0 z-0 opacity-70"
           priority
           data-ai-hint="children playing learning uganda"
         />
