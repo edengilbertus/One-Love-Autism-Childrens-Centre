@@ -83,7 +83,7 @@ export default function BlogPage() {
       {/* Blog Post Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
         {blogPosts.map((post) => (
-          <Card key={post.id} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <Card key={post.slug} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card"> {/* Ensure card uses theme variable */}
             <Link href={`/blog/${post.slug}`} className="block relative h-52 w-full">
               <Image
                 src={post.imageUrl}
@@ -121,7 +121,7 @@ export default function BlogPage() {
        </div>
 
         {/* CMS Integration Note - FOR DEVELOPER */}
-         <div className="mt-16 p-4 bg-yellow-100 border border-yellow-300 rounded-md text-yellow-800 text-sm text-center">
+         <div className="mt-16 p-4 bg-muted/50 border border-border rounded-md text-muted-foreground text-sm text-center"> {/* Use theme variables */}
              <strong>Developer Note:</strong> Blog posts are currently placeholders. CMS integration is needed to allow staff to manage and publish content dynamically. Individual blog post pages (e.g., `/blog/[slug]`) need to be created to display full content.
          </div>
 

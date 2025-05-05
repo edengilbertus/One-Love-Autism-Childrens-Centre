@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[70vh] min-h-[400px] flex items-center justify-center text-center bg-gradient-to-b from-accent/30 to-background">
+      <section className="relative h-[70vh] min-h-[400px] flex items-center justify-center text-center bg-gradient-to-b from-background/30 to-background"> {/* Changed gradient start from accent to background */}
         {/* Background Image/Video Placeholder */}
         <Image
           src="https://i.imgur.com/qvxKNKm.jpeg"
@@ -20,7 +20,7 @@ export default function Home() {
           priority
           data-ai-hint="children playing learning uganda"
         />
-         <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent z-1"></div> {/* Gradient overlay */}
+         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent z-1"></div> {/* Adjusted Gradient overlay */}
         <div className="container relative z-10 px-4 md:px-6 text-foreground">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl mb-4">
             Empowering Every Child with Love and Understanding
@@ -44,10 +44,10 @@ export default function Home() {
       </section>
 
       {/* Featured Story Section */}
-      <section className="py-16 md:py-24 bg-secondary/50">
+      <section className="py-16 md:py-24 bg-secondary/50"> {/* Uses secondary which is now warm gray */}
         <div className="container px-4 md:px-6">
            <h2 className="text-3xl font-semibold tracking-tight text-center mb-12">Making a Difference, One Story at a Time</h2>
-          <Card className="overflow-hidden md:flex md:items-center max-w-4xl mx-auto shadow-lg">
+          <Card className="overflow-hidden md:flex md:items-center max-w-4xl mx-auto shadow-lg bg-card"> {/* Ensure card uses theme variable */}
             <div className="md:w-1/2">
               <Image
                 src="https://i.imgur.com/xjNZs6m.jpeg" // Updated main image
@@ -82,7 +82,7 @@ export default function Home() {
       </section>
 
       {/* Introduction Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-background"> {/* Uses background theme variable */}
         <div className="container px-4 md:px-6 text-center">
           <h2 className="text-3xl font-semibold tracking-tight mb-4">Welcome to One Love Autism Children’s Centre</h2>
           <p className="max-w-3xl mx-auto text-lg text-muted-foreground mb-8">

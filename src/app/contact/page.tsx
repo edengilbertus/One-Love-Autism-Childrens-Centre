@@ -97,7 +97,7 @@ export default function ContactPage() {
 
         {/* Left Column: Contact Form */}
         <div className="lg:col-span-3">
-          <Card className="shadow-lg">
+          <Card className="shadow-lg bg-card"> {/* Added bg-card */}
             <CardHeader>
                <div className="flex items-center gap-3 mb-2">
                   <Send className="h-7 w-7 text-primary"/>
@@ -182,7 +182,7 @@ export default function ContactPage() {
 
         {/* Right Column: Contact Details & Map */}
         <div className="lg:col-span-2 space-y-8">
-          <Card>
+          <Card className="bg-card"> {/* Added bg-card */}
             <CardHeader>
               <CardTitle className="text-xl">Contact Information</CardTitle>
             </CardHeader>
@@ -226,7 +226,7 @@ export default function ContactPage() {
             </CardContent>
           </Card>
 
-           <Card>
+           <Card className="bg-card"> {/* Added bg-card */}
                 <CardHeader>
                    <CardTitle className="text-xl">Connect With Us</CardTitle>
                 </CardHeader>
@@ -240,7 +240,7 @@ export default function ContactPage() {
                 </CardContent>
            </Card>
 
-          <Card id="map">
+          <Card id="map" className="bg-card"> {/* Added bg-card */}
              <CardHeader>
                 <CardTitle className="text-xl">Find Us</CardTitle>
              </CardHeader>
@@ -261,7 +261,7 @@ export default function ContactPage() {
                 <div className="text-center mt-3">
                    {/* Link to Google Maps */}
                    <a
-                      href={`https://www.google.com/maps/search/?api=1&query=${oneLoveCentreLocation.lat},${oneLoveCentreLocation.lng}`}
+                      href={`https://maps.app.goo.gl/vDXwtUTueg9Hx1RK9`} // Updated Google Maps Link
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sm text-primary hover:underline font-medium"
@@ -269,7 +269,7 @@ export default function ContactPage() {
                       View on Google Maps
                    </a>
                 </div>
-                <div className="mt-4 p-3 bg-yellow-100 border border-yellow-300 rounded-md text-yellow-800 text-xs text-center">
+                <div className="mt-4 p-3 bg-muted/50 border border-border rounded-md text-muted-foreground text-xs text-center"> {/* Use theme variables */}
                    <strong>Developer Note:</strong> Map embed requires a Google Maps API key. Replace `YOUR_GOOGLE_MAPS_API_KEY` in the `iframe src`.
                 </div>
              </CardContent>
@@ -278,7 +278,7 @@ export default function ContactPage() {
 
       </div>
        {/* CMS Integration Note - FOR DEVELOPER */}
-         <div className="mt-16 p-4 bg-yellow-100 border border-yellow-300 rounded-md text-yellow-800 text-sm text-center">
+         <div className="mt-16 p-4 bg-muted/50 border border-border rounded-md text-muted-foreground text-sm text-center"> {/* Use theme variables */}
              <strong>Developer Note:</strong> The contact form currently logs data to the console. Implement a backend solution (API route or server action) to handle form submissions. Map requires a valid Google Maps API key. Payment gateway integration is needed for the donation form.
          </div>
     </div>
