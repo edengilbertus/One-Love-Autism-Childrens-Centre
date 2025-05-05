@@ -13,10 +13,10 @@ const WhatsAppIcon = () => (
 
 // Inline SVG for X (Twitter) Icon
 const XIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
-        <path d="M18 6 6 18"/>
-        <path d="m6 6 12 12"/>
-    </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+    <path d="M18 6 6 18"/>
+    <path d="m6 6 12 12"/>
+  </svg>
 );
 
 
@@ -50,7 +50,7 @@ export function Footer() {
                         data-ai-hint="company logo technology electronics" // Added AI hint
                     />
                     <p className="text-sm text-muted-foreground">
-                       Developed by <a href="https://carthiganelectronics.vercel.app/" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-primary transition-colors">Carthigan Electronics</a>
+                       Developed by <a href="https://carthiganelectronics.vercel.app/" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground hover:text-primary transition-colors">Eden Gilbert Carthigan Electronics</a>
                     </p>
                  </div>
                  <div className="flex space-x-4"> {/* Removed justify-center */}
@@ -128,3 +128,6 @@ export function Footer() {
     </footer>
   );
 }
+
+
+    
