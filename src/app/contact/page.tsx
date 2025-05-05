@@ -1,5 +1,4 @@
 
-
 "use client"; // Required for form handling
 
 import * as React from "react";
@@ -284,3 +283,4 @@ export default function ContactPage() {
     </div>
   );
 }
+

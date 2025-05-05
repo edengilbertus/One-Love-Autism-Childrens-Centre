@@ -27,7 +27,7 @@ export function Footer() {
             <p className="text-sm">
               Empowering children with autism and neurodevelopmental disabilities in Kabale District, Uganda through education, therapy, and community support.
             </p>
-             <p className="text-xs mt-2">Registered Name: One Love Autism Children’s Centre Kabale</p>
+             <p className="text-xs mt-2">Registered Name: One Love Autism Children’s Centre</p>
           </div>
 
           {/* Column 2: Quick Links */}
@@ -78,7 +78,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-8 pt-8 border-t border-border/50 text-center text-xs">
-          <p>&copy; {currentYear} One Love Autism Children’s Centre Kabale. All rights reserved.</p>
+          <p>&copy; {currentYear} One Love Autism Children’s Centre. All rights reserved.</p>
            {/* Optional: Add link to privacy policy/terms */}
            {/* <p className="mt-1">
              <Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link> | <Link href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link>

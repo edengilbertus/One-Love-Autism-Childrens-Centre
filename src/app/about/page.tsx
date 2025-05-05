@@ -1,5 +1,4 @@
 
-
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -140,7 +139,7 @@ export default function AboutPage() {
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground">
             <p>
-              One Love Autism Children’s Centre Kabale was founded in 2019 with a deep passion for supporting children often overlooked by society.
+              One Love Autism Children’s Centre was founded in 2019 with a deep passion for supporting children often overlooked by society.
             </p>
             <p>
               Witnessing the lack of specialized resources for children with autism and neurodevelopmental disabilities in the region, we established the centre to provide a safe, nurturing, and stimulating environment.
@@ -385,4 +384,3 @@ export default function AboutPage() {
   );
 }
 
-    

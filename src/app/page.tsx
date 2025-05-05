@@ -86,7 +86,7 @@ export default function Home() {
         <div className="container px-4 md:px-6 text-center">
           <h2 className="text-3xl font-semibold tracking-tight mb-4">Welcome to One Love Autism Children’s Centre</h2>
           <p className="max-w-3xl mx-auto text-lg text-muted-foreground mb-8">
-            One Love Autism Children's Centre Kabale is a beacon of hope in Kabale District, Uganda. We are dedicated to nurturing the potential of children with autism and related neurodevelopmental challenges through tailored education, therapeutic interventions, and strong community partnerships. {/* Updated Name */}
+            One Love Autism Children's Centre is a beacon of hope in Kabale District, Uganda. We are dedicated to nurturing the potential of children with autism and related neurodevelopmental challenges through tailored education, therapeutic interventions, and strong community partnerships. {/* Updated Name */}
           </p>
           <Button asChild>
             <Link href="/about">Discover Our Mission</Link>
