@@ -46,7 +46,7 @@ export default function AboutPage() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                To empower children with autism and neurodevelopmental disabilities in Kabale District, Uganda, by providing accessible, high-quality education, therapy, and community support, fostering inclusion and maximizing their potential.
+                To create a safe, inclusive, and supportive environment where children with autism and other developmental challenges—especially from low-income families can access care, therapy, education, and opportunities to thrive. By working closely with families who struggle to meet these basic needs, we aim to empower caregivers, reduce stigma, promote community acceptance, and improve the quality of life for neurodiverse children and their households.
               </p>
             </CardContent>
           </Card>
@@ -57,7 +57,7 @@ export default function AboutPage() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                A community where every child with neurodevelopmental challenges is loved, understood, supported, and has the opportunity to thrive and lead a fulfilling life.
+                A community in Western Uganda where every child with developmental challenges is embraced, empowered, and given the opportunity to reach their full potential—regardless of their family's income or circumstances.
               </p>
             </CardContent>
           </Card>
