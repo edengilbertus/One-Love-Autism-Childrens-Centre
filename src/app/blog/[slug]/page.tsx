@@ -37,18 +37,18 @@ async function getPostData(slug: string) {
             title: "Impact Update: Providing Vital Medication Support",
             date: "January 25, 2025",
             author: "One Love Centre Team",
-            imageUrl: "https://i.imgur.com/XROsOeU.jpeg", // Updated main image
+            imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 14.06.19.jpeg", // Updated main image
             imageAlt: "Child receiving medication support",
             aiHint: "medication pharmacy health uganda child",
             content: `
                 <p class="mb-4">In January 2025, nine children at One Love Autism Children’s Centre who live with autism and other neurological conditions received much-needed medication support through the support of Gabi Eder, our Austrian friend and donor.</p>
                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
-                    <img src="https://i.imgur.com/nuAf0zf.jpeg" alt="Medication packages" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="medication packages health uganda"/>
-                    <img src="https://i.imgur.com/g1ylOtI.jpeg" alt="Child receiving care" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="child health care uganda"/>
+                    <img src="/images/blog/WhatsApp Image 2025-09-21 at 14.06.20 (1).jpeg" alt="Medication packages" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="medication packages health uganda"/>
+                    <img src="/images/blog/WhatsApp Image 2025-09-21 at 14.06.20.jpeg" alt="Child receiving care" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="child health care uganda"/>
                 </div>
                 <p class="mb-4">These children rely on daily medicines like Sodium Valproate, Carbamazepine, Diazepam, and Folic Acid to help manage seizures, stabilize mood, and support their overall health.</p>
                  <div class="my-6">
-                     <img src="https://i.imgur.com/0L1wlUz.jpeg" alt="Staff organizing medications" class="rounded-lg shadow-md object-cover w-full mx-auto max-w-md" data-ai-hint="staff organizing medication uganda"/>
+                     <img src="/images/blog/WhatsApp Image 2025-09-21 at 14.06.21 (1).jpeg" alt="Staff organizing medications" class="rounded-lg shadow-md object-cover w-full mx-auto max-w-md" data-ai-hint="staff organizing medication uganda"/>
                  </div>
                 <p class="mb-4">For many families, accessing these essential medicines regularly is a challenge due to cost and availability. By providing these medication packets, we are helping our children stay healthy, attend school, and participate more fully in daily life.</p>
                 <p class="mb-4">We extend our sincere gratitude to Gabi Eder for her continuous support, which directly impacts the well-being of our children.</p>

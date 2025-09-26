@@ -22,7 +22,7 @@ const blogPosts = [
     title: "Impact Update: Providing Vital Medication Support", // Updated title
     date: "January 25, 2025", // Updated date
     excerpt: "Thanks to Gabi Eder, nine children received crucial medications this month, helping them manage seizures and stay healthy...", // Updated excerpt
-    imageUrl: "https://i.imgur.com/XROsOeU.jpeg", // Updated cover image
+    imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 14.06.19.jpeg", // Updated cover image
     imageAlt: "Child receiving medication support",
     slug: "medication-support", // Updated slug
     aiHint: "medication pharmacy health uganda child",

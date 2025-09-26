@@ -37,7 +37,7 @@ const projects: Project[] = [
     title: "Vital Medication Support Provided", // Updated title
     date: "January 2025",
     description: "Thanks to Gabi Eder, nine children received essential medications like Sodium Valproate and Carbamazepine to manage seizures and support their health.", // Updated description
-    imageUrl: "https://i.imgur.com/XROsOeU.jpeg", // Updated image
+    imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 14.06.19.jpeg", // Updated image
     imageAlt: "Child receiving medication support",
     donor: "Gabi Eder",
     icon: <Pill className="h-6 w-6 text-primary" />,
