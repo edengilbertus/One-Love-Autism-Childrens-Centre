@@ -49,7 +49,7 @@ const projects: Project[] = [
     title: "Menstrual Hygiene Support for Girls", // Updated title
     date: "January 2025",
     description: "Five girls received washable sanitary pads, promoting dignity and comfort, and ensuring they can attend school without interruption.", // Updated description
-    imageUrl: "https://i.imgur.com/kSN8Z8Z.jpeg", // Updated image
+    imageUrl: "/images/blog/menstrual-hygiene-main.jpeg", // Updated image
     imageAlt: "Girls receiving hygiene packs",
     icon: <Droplets className="h-6 w-6 text-primary" />,
     aiHint: "menstrual hygiene pads girls education uganda dignity",

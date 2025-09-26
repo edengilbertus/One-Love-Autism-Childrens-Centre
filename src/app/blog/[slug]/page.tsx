@@ -59,16 +59,19 @@ async function getPostData(slug: string) {
             title: "Promoting Dignity: Menstrual Hygiene Support for Girls",
             date: "January 20, 2025",
             author: "One Love Centre Team",
-            imageUrl: "https://i.imgur.com/kSN8Z8Z.jpeg", // Updated main image
+            imageUrl: "/images/blog/menstrual-hygiene-main.jpeg", // Updated main image
             imageAlt: "Girls receiving hygiene packs",
             aiHint: "menstrual hygiene pads girls education uganda dignity",
             content: `
                 <p class="mb-4">In January 2025, five girls under the care of One Love Autism Children’s Centre received washable sanitary pads as part of our menstrual hygiene support program.</p>
                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
-                    <img src="https://i.imgur.com/Cx96hbv.jpeg" alt="Washable sanitary pads" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="reusable menstrual pads hygiene uganda"/>
-                    <img src="https://i.imgur.com/Hcrpkl4.jpeg" alt="Girls learning about hygiene" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="girls health education uganda"/>
+                    <img src="/images/blog/menstrual-hygiene-pads.jpeg" alt="Washable sanitary pads" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="reusable menstrual pads hygiene uganda"/>
+                    <img src="/images/blog/menstrual-hygiene-education.jpeg" alt="Girls learning about hygiene" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="girls health education uganda"/>
                 </div>
                 <p class="mb-4">For girls with autism and special needs, managing menstruation can be challenging — especially in communities where access to sanitary products is limited. By providing reusable, eco-friendly pads, we are promoting dignity, comfort, and confidence for our girls, ensuring they can continue attending school and participating in daily activities without interruption.</p>
+                <div class="my-6">
+                     <img src="/images/blog/menstrual-hygiene-group.jpeg" alt="Group of girls receiving hygiene support" class="rounded-lg shadow-md object-cover w-full mx-auto max-w-md" data-ai-hint="girls hygiene support group uganda"/>
+                 </div>
                 <p class="mb-4">This initiative is a crucial step in supporting the holistic well-being and inclusion of the girls at our centre.</p>
             `,
              tags: ["Impact", "Health", "Girls Education", "Hygiene"],

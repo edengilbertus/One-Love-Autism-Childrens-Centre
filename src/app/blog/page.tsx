@@ -32,7 +32,7 @@ const blogPosts = [
     title: "Promoting Dignity: Menstrual Hygiene Support for Girls", // Updated title
     date: "January 20, 2025", // Updated date
     excerpt: "Five girls received reusable sanitary pads, ensuring comfort, confidence, and continued access to education...", // Updated excerpt
-    imageUrl: "https://i.imgur.com/kSN8Z8Z.jpeg", // Updated cover image
+    imageUrl: "/images/blog/menstrual-hygiene-main.jpeg", // Updated cover image
     imageAlt: "Girls receiving hygiene packs",
     slug: "menstrual-hygiene", // Updated slug
     aiHint: "menstrual hygiene pads girls education uganda dignity",
