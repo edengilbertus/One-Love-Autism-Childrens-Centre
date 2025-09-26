@@ -132,6 +132,30 @@ async function getPostData(slug: string) {
             `,
             tags: ["Autism", "Therapy", "Sensory Processing", "Education"],
         },
+        "september-2025-highlights": {
+            title: "September 2025 Highlights at One Love Autism Children's Centre",
+            date: "September 1, 2025",
+            author: "One Love Centre Team",
+            imageUrl: "/WhatsApp Image 2025-09-21 at 13.30.30.jpeg",
+            imageAlt: "September 2025 highlights at One Love Autism Children's Centre",
+            aiHint: "september highlights 2025 autism children uganda community",
+            content: `
+                <p class="mb-4">The month of September began with significant progress for the One Love Autism family.</p>
+                <p class="mb-4">On September 1st, our Director met with and counselled potential new members, introducing them to the Centre's mission and offering encouragement for the journey ahead. This marked an essential step in expanding our reach to more families in need.</p>
+                <p class="mb-4">Later that same week, the Director conducted home visits to two families, combining awareness-building within the community with counselling and individual assessments. These visits reaffirmed One Love's dedication to meeting families where they are and ensuring that every child is recognised, supported, and celebrated.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+                    <img src="/WhatsApp Image 2025-09-21 at 13.30.30 (1).jpeg" alt="Home visit with family" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="home visit autism children uganda"/>
+                    <img src="/WhatsApp Image 2025-09-21 at 13.30.30 (2).jpeg" alt="Counselling session" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="counselling session autism families uganda"/>
+                </div>
+                <p class="mb-4">On September 6th, the Centre held its quarterly members' meeting, which was full of joy and purpose. We proudly welcomed 13 new members into the One Love community. The day was made even more special by the generosity of our benefactor, Gabby, who donated Mackintosh mattresses. These mattresses provide much-needed relief for parents caring for children with incontinence challenges, ensuring greater dignity and comfort in daily care.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+                    <img src="/WhatsApp Image 2025-09-21 at 13.30.31.jpeg" alt="Quarterly members meeting" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="members meeting autism children uganda"/>
+                    <img src="/WhatsApp Image 2025-09-21 at 13.31.23.jpeg" alt="Mackintosh mattresses donation" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="donation mattresses autism children uganda"/>
+                </div>
+                <p class="mb-4">As we continue to grow, each milestone reminds us that the heart of One Love Autism Children's Centre lies in the unity of families, supporters, and the community that comes together to uplift our children.</p>
+            `,
+            tags: ["Community", "Outreach", "Donation", "Membership", "Growth"],
+        },
     };
 
     // @ts-ignore
