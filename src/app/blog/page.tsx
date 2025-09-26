@@ -72,7 +72,7 @@ const blogPosts = [
     title: "September 2025 Highlights at One Love Autism Children's Centre",
     date: "September 1, 2025",
     excerpt: "The month of September began with significant progress for the One Love Autism family...",
-    imageUrl: "/WhatsApp Image 2025-09-21 at 13.30.30.jpeg",
+    imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 13.30.30.jpeg",
     imageAlt: "September 2025 highlights at One Love Autism Children's Centre",
     slug: "september-2025-highlights",
     aiHint: "september highlights 2025 autism children uganda community",
