@@ -19,7 +19,7 @@ export default function ProgramsPage() {
         <Card className="shadow-lg overflow-hidden">
           <div className="relative h-60 w-full">
             <Image
-              src="https://i.imgur.com/vJ8aGlS.jpeg" // Relevant image
+              src="/images/blog/WhatsApp Image 2025-09-21 at 14.06.19 (1).jpeg" // Relevant image
               alt="Therapist working with child using sensory tools"
               layout="fill"
               objectFit="cover"
@@ -52,7 +52,7 @@ export default function ProgramsPage() {
              {/* Optional: Add another small relevant image */}
              <div className="pt-4">
                  <Image
-                    src="https://i.imgur.com/Cmu58fb.jpeg" // Another therapy image
+                    src="/images/blog/WhatsApp Image 2025-09-21 at 14.06.20.jpeg" // Another therapy image
                     alt="Child engaged in learning activity"
                     width={400}
                     height={250}
@@ -67,7 +67,7 @@ export default function ProgramsPage() {
         <Card className="shadow-lg overflow-hidden">
            <div className="relative h-60 w-full">
             <Image
-              src="https://i.imgur.com/muY1tfR.jpeg" // Updated image
+              src="/images/blog/WhatsApp Image 2025-09-21 at 14.06.21 (1).jpeg" // Updated image
               alt="Children learning life skills like crafts"
               layout="fill"
               objectFit="cover"
@@ -99,7 +99,7 @@ export default function ProgramsPage() {
              {/* Optional: Add another small relevant image */}
              <div className="pt-4">
                  <Image
-                    src="https://i.imgur.com/FcLELYm.jpeg" // Updated image
+                    src="/images/blog/WhatsApp Image 2025-09-21 at 14.06.20 (1).jpeg" // Updated image
                     alt="Students participating in vocational training activity"
                     width={400}
                     height={250}
@@ -130,7 +130,7 @@ export default function ProgramsPage() {
              {/* Optional: Add image of parent group */}
              <div className="pt-4">
                  <Image
-                    src="https://i.imgur.com/FcLELYm.jpeg" // Updated image
+                    src="/images/blog/WhatsApp Image 2025-09-21 at 13.30.31.jpeg" // Updated image
                     alt="Parents participating in a support group session discussion"
                     width={400}
                     height={250}
