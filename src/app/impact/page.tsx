@@ -25,7 +25,7 @@ const projects: Project[] = [
     title: "New Wheelchairs Bring Independence", // Updated title
     date: "March 2023",
     description: "Natukunda Anisha, Abaasa Divine, and Amutuheire Aullelia received new wheelchairs, transforming their mobility and allowing them to participate more fully in school and play.", // Simplified description for card
-    imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 14.06.19.jpeg", // Updated image
+    imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 14.06.19 (2).jpeg", // Updated image
     imageAlt: "Children using new wheelchairs",
     donor: "Isabella & Herman Zauscher",
     icon: <Accessibility className="h-6 w-6 text-primary" />,
@@ -37,7 +37,7 @@ const projects: Project[] = [
     title: "Vital Medication Support Provided", // Updated title
     date: "January 2025",
     description: "Thanks to Gabi Eder, nine children received essential medications like Sodium Valproate and Carbamazepine to manage seizures and support their health.", // Updated description
-    imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 14.06.19.jpeg", // Updated image
+    imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 14.06.21.jpeg", // Updated image
     imageAlt: "Child receiving medication support",
     donor: "Gabi Eder",
     icon: <Pill className="h-6 w-6 text-primary" />,
@@ -60,7 +60,7 @@ const projects: Project[] = [
     title: "Warm Blankets from Mothers' Savings", // Updated title
     date: "December 2024",
     description: "Through a collective savings initiative, 30 mothers purchased warm blankets for their children, adding to bedding donated by friends.", // Updated description
-    imageUrl: "https://i.imgur.com/KuVFrl3.jpeg", // Updated image
+    imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 13.31.23.jpeg", // Updated image
     imageAlt: "Child happy with new blanket",
     donor: "Community Mothers' Initiative & Friends", // Updated donor info
     icon: <BedDouble className="h-6 w-6 text-primary" />,
