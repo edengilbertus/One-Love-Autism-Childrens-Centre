@@ -25,7 +25,7 @@ const projects: Project[] = [
     title: "New Wheelchairs Bring Independence", // Updated title
     date: "March 2023",
     description: "Natukunda Anisha, Abaasa Divine, and Amutuheire Aullelia received new wheelchairs, transforming their mobility and allowing them to participate more fully in school and play.", // Simplified description for card
-    imageUrl: "https://i.imgur.com/xjNZs6m.jpeg", // Updated image
+    imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 14.06.19.jpeg", // Updated image
     imageAlt: "Children using new wheelchairs",
     donor: "Isabella & Herman Zauscher",
     icon: <Accessibility className="h-6 w-6 text-primary" />,
