@@ -12,7 +12,7 @@ const blogPosts = [
     title: "New Wheelchairs Bring Independence to Anisha, Divine, and Aullelia", // Updated title
     date: "March 20, 2023", // Example date
     excerpt: "Read the heartwarming story of how new wheelchairs, donated by Isabella and Herman Zauscher, transformed the lives of three children...", // Updated excerpt
-    imageUrl: "https://i.imgur.com/xjNZs6m.jpeg", // Main image for Anisha's story
+    imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 14.06.19.jpeg", // Main image for Anisha's story
     imageAlt: "Children happy with new wheelchairs",
     slug: "anishas-story", // Specific slug
     aiHint: "children wheelchairs uganda donation happy",
@@ -42,7 +42,7 @@ const blogPosts = [
     title: "Mothers' Initiative Brings Warmth: A Blanket Drive Success", // New post title
     date: "December 15, 2024", // New post date
     excerpt: "Discover how hardworking mothers used collective savings to purchase cozy blankets for 30 children at the centre...", // New post excerpt
-    imageUrl: "https://i.imgur.com/KuVFrl3.jpeg", // Updated cover image
+    imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 14.06.19.jpeg", // Updated cover image
     imageAlt: "Child happy with new blanket",
     slug: "blanket-drive", // New post slug
     aiHint: "children blankets warm community uganda mother",

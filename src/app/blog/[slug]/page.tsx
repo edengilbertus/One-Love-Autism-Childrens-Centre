@@ -80,19 +80,19 @@ async function getPostData(slug: string) {
             title: "Mothers' Initiative Brings Warmth: A Blanket Drive Success",
             date: "December 15, 2024",
             author: "One Love Centre Team",
-            imageUrl: "https://i.imgur.com/KuVFrl3.jpeg", // Updated main image (cover)
+            imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 14.06.19.jpeg", // Updated main image (cover)
             imageAlt: "Child happy with new blanket",
             aiHint: "children blankets warm community uganda mother",
             content: `
                 <p class="mb-4">In December 2024, 30 children at One Love Autism Children’s Centre received warm blankets — a special gift from their own mothers, who came together to make this possible.</p>
                 <p class="mb-4">Throughout the year, these hardworking mothers, many from low-income and resource-limited households, were encouraged to save small amounts through our support groups. At the end of the year, they used their collective savings to buy something meaningful they might otherwise struggle to afford — new blankets to keep their children warm and comfortable.</p>
                  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 my-6">
-                    <img src="https://i.imgur.com/Wqmxotv.jpeg" alt="Children receiving blankets" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="children blankets donation uganda"/>
-                    <img src="https://i.imgur.com/4Q7XGpz.jpeg" alt="Mother giving blanket to child" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="mother child blanket gift uganda"/>
-                    <img src="https://i.imgur.com/Xg15BOn.jpeg" alt="Children happy with blankets" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="children happy blankets community uganda"/>
+                    <img src="/images/blog/WhatsApp Image 2025-09-21 at 14.06.20 (1).jpeg" alt="Children receiving blankets" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="children blankets donation uganda"/>
+                    <img src="/images/blog/WhatsApp Image 2025-09-21 at 14.06.20.jpeg" alt="Mother giving blanket to child" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="mother child blanket gift uganda"/>
+                    <img src="/images/blog/WhatsApp Image 2025-09-21 at 14.06.21 (1).jpeg" alt="Children happy with blankets" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="children happy blankets community uganda"/>
                  </div>
                  <div class="my-6">
-                     <img src="https://i.imgur.com/fVhAjaQ.jpeg" alt="More children with blankets" class="rounded-lg shadow-md object-cover w-full mx-auto max-w-md" data-ai-hint="children donation warmth uganda"/>
+                     <img src="/images/blog/WhatsApp Image 2025-09-21 at 14.06.21.jpeg" alt="More children with blankets" class="rounded-lg shadow-md object-cover w-full mx-auto max-w-md" data-ai-hint="children donation warmth uganda"/>
                  </div>
                 <p class="mb-4">This effort added to the beautiful bedsheets donated earlier by our friends, creating a full set of cozy bedding for each child. It's a wonderful example of community strength and parental love making a tangible difference.</p>
             `,
