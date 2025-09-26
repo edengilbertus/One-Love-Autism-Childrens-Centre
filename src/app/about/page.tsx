@@ -32,12 +32,12 @@ export default function AboutPage() {
       <section className="mb-16 grid md:grid-cols-2 gap-8 items-center">
         <div>
           <Image
-            src="https://i.imgur.com/FTxyfjH.jpeg" // Updated image source
-            alt="Children and staff at One Love Autism Children's Centre" // Updated alt text
+            src="/images/WhatsApp Image 2025-09-21 at 14.06.19.jpeg"
+            alt="Children and staff at One Love Autism Children's Centre"
             width={600}
             height={400}
             className="rounded-lg shadow-md object-cover w-full"
-            data-ai-hint="children staff group photo uganda" // Updated AI hint
+            data-ai-hint="children staff group photo uganda"
           />
         </div>
         <div className="space-y-6">
