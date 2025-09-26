@@ -81,6 +81,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* September 2025 Highlights Section */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container px-4 md:px-6">
+          <h2 className="text-3xl font-semibold tracking-tight text-center mb-12">Latest Updates</h2>
+          <Card className="overflow-hidden md:flex md:items-center max-w-4xl mx-auto shadow-lg bg-card">
+            <div className="md:w-1/2">
+              <Image
+                src="/images/blog/WhatsApp Image 2025-09-21 at 13.30.30.jpeg"
+                alt="September 2025 Highlights at One Love Autism Children's Centre"
+                width={600}
+                height={400}
+                className="object-cover w-full h-64 md:h-full"
+                data-ai-hint="september highlights 2025 autism children uganda community"
+              />
+            </div>
+            <div className="md:w-1/2">
+              <CardHeader>
+                <CardTitle className="text-2xl">September 2025 Highlights</CardTitle>
+                <CardDescription>September 1, 2025 - Community Outreach</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground">
+                  The month of September began with significant progress for the One Love Autism family. On September 1st, our Director met with and counselled potential new members, introducing them to the Centre's mission and offering encouragement for the journey ahead.
+                </p>
+              </CardContent>
+              <CardFooter className="flex justify-between items-center">
+                <p className="text-xs text-muted-foreground">Recent Achievement</p>
+                <Button variant="link" asChild className="p-0 h-auto">
+                  <Link href="/blog/september-2025-highlights">
+                    Read Full Story <ArrowRight className="ml-1 h-4 w-4" />
+                  </Link>
+                </Button>
+              </CardFooter>
+            </div>
+          </Card>
+        </div>
+      </section>
+
       {/* Introduction Section */}
       <section className="py-16 md:py-24 bg-background"> {/* Uses background theme variable */}
         <div className="container px-4 md:px-6 text-center">
