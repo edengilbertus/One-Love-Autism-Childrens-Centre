@@ -50,7 +50,7 @@ export default function Home() {
           <Card className="overflow-hidden md:flex md:items-center max-w-4xl mx-auto shadow-lg bg-card"> {/* Ensure card uses theme variable */}
             <div className="md:w-1/2">
               <Image
-                src="https://i.imgur.com/xjNZs6m.jpeg" // Updated main image
+                src="/images/blog/WhatsApp Image 2025-09-21 at 14.06.19.jpeg"
                 alt="Anisha using her new wheelchair"
                 width={600}
                 height={400}
