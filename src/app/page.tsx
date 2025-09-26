@@ -12,7 +12,7 @@ export default function Home() {
       <section className="relative h-[70vh] min-h-[400px] flex items-center justify-center text-center bg-gradient-to-b from-background/30 to-background"> {/* Changed gradient start from accent to background */}
         {/* Background Image/Video Placeholder */}
         <Image
-          src="https://i.imgur.com/qvxKNKm.jpeg"
+          src="/images/WhatsApp Image 2025-09-21 at 14.06.18.jpeg"
           alt="Children at One Love Centre"
           layout="fill"
           objectFit="cover"
