@@ -15,19 +15,19 @@ async function getPostData(slug: string) {
             title: "New Wheelchairs Bring Independence to Anisha, Divine, and Aullelia",
             date: "March 20, 2023",
             author: "One Love Centre Team", // Example author
-            imageUrl: "https://i.imgur.com/xjNZs6m.jpeg", // Main image
+            imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 14.06.19.jpeg", // Main image
             imageAlt: "Children happy with new wheelchairs",
             aiHint: "children wheelchairs uganda donation happy",
             content: `
                 <p class="mb-4">In March 2023, three of our beautiful children — Natukunda Anisha, Abaasa Divine, and Amutuheire Aullelia — received new wheelchairs through the generous support of our friends Isabella and Herman Zauscher from Austria.</p>
                 <p class="mb-4">Before, they faced daily challenges moving around, attending school, playing with other children, and even participating in family activities. Transport was difficult, and they often missed out on moments that every child deserves.</p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
-                    <img src="https://i.imgur.com/IhhwtVi.jpeg" alt="Anisha smiling in her wheelchair" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="child girl wheelchair smiling uganda"/>
-                    <img src="https://i.imgur.com/NKdOMOM.jpeg" alt="Child receiving wheelchair support" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="child wheelchair support uganda community"/>
+                    <img src="/images/blog/WhatsApp Image 2025-09-21 at 14.06.19 (1).jpeg" alt="Anisha smiling in her wheelchair" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="child girl wheelchair smiling uganda"/>
+                    <img src="/images/blog/WhatsApp Image 2025-09-21 at 14.06.19 (2).jpeg" alt="Child receiving wheelchair support" class="rounded-lg shadow-md object-cover w-full" data-ai-hint="child wheelchair support uganda community"/>
                 </div>
                  <p class="mb-4">Today, thanks to their new wheelchairs, their lives have been transformed. Anisha can now join her friends in class, Divine is able to play outside, and Aullelia moves around her home and community with more independence and joy.</p>
                  <div class="my-6">
-                     <img src="https://i.imgur.com/KGLMQJk.jpeg" alt="Child being helped into wheelchair" class="rounded-lg shadow-md object-cover w-full mx-auto max-w-md" data-ai-hint="child disability support caregiver uganda"/>
+                     <img src="/images/blog/WhatsApp Image 2025-09-21 at 14.06.19 (1).jpeg" alt="Child being helped into wheelchair" class="rounded-lg shadow-md object-cover w-full mx-auto max-w-md" data-ai-hint="child disability support caregiver uganda"/>
                  </div>
                 <p class="mb-4">This incredible gift highlights the impact of generosity and the importance of mobility for children with disabilities. We are deeply grateful to Isabella and Herman Zauscher for making such a profound difference.</p>
             `,
