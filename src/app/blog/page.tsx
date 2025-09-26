@@ -124,10 +124,7 @@ export default function BlogPage() {
         ))}
       </div>
 
-       {/* Placeholder for Pagination or Load More */}
-       <div className="text-center mt-16">
-         <Button variant="outline" disabled>Load More Posts (Coming Soon)</Button>
-       </div>
+
 
     </div>
   );
