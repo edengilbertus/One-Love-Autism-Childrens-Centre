@@ -129,11 +129,6 @@ export default function BlogPage() {
          <Button variant="outline" disabled>Load More Posts (Coming Soon)</Button>
        </div>
 
-        {/* CMS Integration Note - FOR DEVELOPER */}
-         <div className="mt-16 p-4 bg-muted/50 border border-border rounded-md text-muted-foreground text-sm text-center"> {/* Use theme variables */}
-             <strong>Developer Note:</strong> Blog posts are currently placeholders. CMS integration is needed to allow staff to manage and publish content dynamically. Individual blog post pages (e.g., `/blog/[slug]`) need to be created to display full content.
-         </div>
-
     </div>
   );
 }
