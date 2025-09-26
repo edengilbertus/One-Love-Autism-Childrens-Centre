@@ -15,7 +15,7 @@ async function getPostData(slug: string) {
             title: "New Wheelchairs Bring Independence to Anisha, Divine, and Aullelia",
             date: "March 20, 2023",
             author: "One Love Centre Team", // Example author
-            imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 14.06.19.jpeg", // Main image
+            imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 14.06.19 (2).jpeg", // Main image
             imageAlt: "Children happy with new wheelchairs",
             aiHint: "children wheelchairs uganda donation happy",
             content: `
@@ -37,7 +37,7 @@ async function getPostData(slug: string) {
             title: "Impact Update: Providing Vital Medication Support",
             date: "January 25, 2025",
             author: "One Love Centre Team",
-            imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 14.06.19.jpeg", // Updated main image
+            imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 14.06.21.jpeg", // Updated main image
             imageAlt: "Child receiving medication support",
             aiHint: "medication pharmacy health uganda child",
             content: `
@@ -80,7 +80,7 @@ async function getPostData(slug: string) {
             title: "Mothers' Initiative Brings Warmth: A Blanket Drive Success",
             date: "December 15, 2024",
             author: "One Love Centre Team",
-            imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 14.06.19.jpeg", // Updated main image (cover)
+            imageUrl: "/images/blog/WhatsApp Image 2025-09-21 at 13.31.23.jpeg", // Updated main image (cover)
             imageAlt: "Child happy with new blanket",
             aiHint: "children blankets warm community uganda mother",
             content: `
