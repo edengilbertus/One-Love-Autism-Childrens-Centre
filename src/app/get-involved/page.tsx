@@ -87,7 +87,7 @@ export default function GetInvolvedPage() {
                {/* School Building Vision Image */}
                 <div className="mt-4">
                     <Image
-                      src="https://i.imgur.com/zTbQPC9.jpeg" // Updated image source
+                      src="/images/blog/WhatsApp Image 2025-09-21 at 14.06.19 (2).jpeg" // Updated image source
                       alt="Vision for the future One Love Centre school classroom with children drawing" // Updated alt text
                       width={600}
                       height={300}
