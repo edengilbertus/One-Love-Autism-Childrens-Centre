@@ -35,7 +35,7 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation & Theme Toggle */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden md:flex items-center space-x-4 ml-auto">
             <nav className="flex items-center space-x-6">
               {navItems.map((item) => (
                 <Link
